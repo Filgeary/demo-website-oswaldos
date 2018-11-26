@@ -1,7 +1,27 @@
+# MacOS trash
+.DS_Store
+
+# Windows trash
+Thumbs.db
+
+# Code Editors
+.vscode
+.atom
+*.sublime*
+.idea
+
+# Graphic
+*.ai
+*.psd
+*.pdf
+
+# Source CSS
+source/css/*.css
+
 # Logs
 logs
 *.log
-npm-debug.log*
+npm-debug.*
 yarn-debug.log*
 yarn-error.log*
 

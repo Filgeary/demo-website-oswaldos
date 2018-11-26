@@ -1,0 +1,22 @@
+{
+  "name": "demo-website-3",
+  "version": "1.0.0",
+  "description": "training project",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filgeary/demo-website-3.git"
+  },
+  "author": "Filgeary",
+  "bugs": {
+    "url": "https://github.com/Filgeary/demo-website-3/issues"
+  },
+  "homepage": "https://github.com/Filgeary/demo-website-3#readme",
+  "devDependencies": {
+    "stylelint": "~9.8.0",
+    "stylelint-config-standard": "~18.2.0"
+  }
+}
