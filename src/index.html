@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
@@ -14,9 +14,43 @@
 <body>
 
 
-  <header>
+  <header class="page-header">
 
-    <nav>
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/225x30" width="225" height="30" alt="LogoTitle">
+    </a>
+
+    <nav class="main-nav">
+
+      <button class="main-nav__toggle" type="button">Menu</button>
+
+      <div class="main-nav__wrapper">
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Home</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Works</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Enroll</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Contacts</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+        
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">SignUp</a>
+          </li>
+        </ul>
+
+      </div>
 
     </nav>
 
