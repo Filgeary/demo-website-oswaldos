@@ -4,7 +4,8 @@
   "description": "training project",
   "main": "src/index.html",
   "scripts": {
-    "test": "npm test"
+    "stylelint": "stylelint 'src/sass/**/*.scss' ",
+    "test": "npm run stylelint"
   },
   "repository": {
     "type": "git",
