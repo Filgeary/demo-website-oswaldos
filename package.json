@@ -1,11 +1,14 @@
 {
   "name": "demo-website-3",
   "version": "1.0.0",
+  "private": true,
   "description": "training project",
   "main": "src/index.html",
   "scripts": {
-    "stylelint": "stylelint 'src/sass/**/*.scss' ",
-    "test": "npm run stylelint"
+    "stylelint": "stylelint ./src/**/*.scss --color --formatter verbose",
+    "stylelint-fix": "stylelint ./src/**/*.scss --color --formatter verbose --fix",
+    "test": "npm run stylelint",
+    "build": "npm run gulp"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,15 @@
   },
   "homepage": "https://github.com/Filgeary/demo-website-3#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0",
     "stylelint": "~9.8.0",
     "stylelint-config-standard": "~18.2.0"
+  },
+  "engines": {
+    "node": "~10.13.0",
+    "npm": "~6.4.1"
   }
 }
