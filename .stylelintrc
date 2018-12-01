@@ -1,4 +1,10 @@
 {
   "defaultSeverity": "warning",
-  "extends": "stylelint-config-standard"
+  "extends": "stylelint-config-standard",
+
+  "rules": {
+    "at-rule-empty-line-before": [ "always", {
+      "except": ["after-same-name"],
+      "ignore": ["blockless-after-blockless"]}],
+  }
 }
