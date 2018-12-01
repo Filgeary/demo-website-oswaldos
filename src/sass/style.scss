@@ -1,5 +1,18 @@
 @charset 'utf-8';
 
-body {
-  background-color: #ccc;
-}
+@import 'abstracts/variables.scss';
+@import 'abstracts/mixins.scss';
+
+@import 'base/normalize.scss';
+@import 'base/fonts.scss';
+@import 'base/base.scss';
+
+@import 'blocks/page-header.scss';
+@import 'blocks/page-main.scss';
+@import 'blocks/page-footer.scss';
+
+@import 'components/buttons.scss';
+
+@import 'pages/contacts.scss';
+
+// mockup
