@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+
+  font: inherit;
+  text-align: center;
+  color: $btn-color;
+  vertical-align: middle;
+
+  background-color: $btn-bg-color;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $btn-hover-color;
+    background-color: $btn-bg-hover-color;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: $btn-disabled;
+  }
+}
