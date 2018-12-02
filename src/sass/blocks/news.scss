@@ -18,4 +18,20 @@
   @include reset-list;
 }
 
+@media (min-width: $tablet-width) {
+  .news {
+    width: auto;
+  }
+
+  .news__wrapper {
+    width: 640px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .news__list {
+    display: flex;
+  }
+}
+
 // mockup

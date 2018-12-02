@@ -24,4 +24,28 @@
   display: flex;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: auto;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 640px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__contacts {
+    width: 400px;
+  }
+
+  .page-footer__social {
+    order: 3;
+    width: 640px;
+  }
+}
+
 // mockup

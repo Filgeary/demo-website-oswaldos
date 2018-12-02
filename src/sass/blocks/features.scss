@@ -14,4 +14,15 @@
   @include reset-list;
 }
 
+@media (min-width: $tablet-width) {
+  .features {
+    width: auto;
+  }
+
+  .features__wrapper {
+    width: 640px;
+    padding: 45px 30px;
+  }
+}
+
 // mockup
