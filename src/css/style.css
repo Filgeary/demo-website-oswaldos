@@ -349,12 +349,41 @@ input[type="radio"].visually-hidden {
     height: 648px; } }
 
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   min-height: 310px;
   background-color: #826550; }
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 @media (min-width: 768px) {
   .main-nav {
-    min-height: 70px; } }
+    width: auto;
+    margin: 0;
+    min-height: 70px; }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto; }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between; }
+  .site-list {
+    width: 570px; }
+  .user-list {
+    width: 60px; } }
+
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    width: 960px; }
+  .site-list {
+    width: 780px; }
+  .user-list {
+    width: 160px; } }
 
 .btn {
   display: inline-block;
