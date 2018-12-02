@@ -1,0 +1,13 @@
+.main-nav {
+  min-height: 310px;
+
+  background-color: #826550;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 70px;
+  }
+}
+
+// mockup

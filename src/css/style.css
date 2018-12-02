@@ -332,6 +332,30 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.page-header {
+  display: flex;
+  flex-direction: column; }
+
+.page-header__logo {
+  height: 85px; }
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 2;
+    height: 400px; } }
+
+@media (min-width: 1200px) {
+  .page-header__logo {
+    height: 648px; } }
+
+.main-nav {
+  min-height: 310px;
+  background-color: #826550; }
+
+@media (min-width: 768px) {
+  .main-nav {
+    min-height: 70px; } }
+
 .btn {
   display: inline-block;
   font: inherit;
