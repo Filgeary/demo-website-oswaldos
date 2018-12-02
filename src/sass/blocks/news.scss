@@ -31,6 +31,15 @@
 
   .news__list {
     display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news__wrapper {
+    width: 960px;
+    padding-top: 60px;
+    padding-bottom: 45px;
   }
 }
 

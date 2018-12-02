@@ -25,4 +25,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    width: 960px;
+    padding: 0;
+  }
+
+  .features__list {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 55px;
+  }
+}
+
 // mockup

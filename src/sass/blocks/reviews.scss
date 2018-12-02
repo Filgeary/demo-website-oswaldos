@@ -14,6 +14,11 @@
   padding-bottom: 20px;
 }
 
+.reviews__item {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     width: auto;
@@ -23,6 +28,13 @@
     width: 640px;
     padding-top: 45px;
     padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    width: 960px;
+    padding-bottom: 45px;
   }
 }
 
