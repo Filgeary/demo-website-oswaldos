@@ -1,13 +1,16 @@
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
-  font-family: "FontName", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: "PT Sans - Narrow", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 400;
-
+  font-style: normal;
   color: $font-color;
+
+  background-color: $bg-darkgrey;
 }
 
 a {
