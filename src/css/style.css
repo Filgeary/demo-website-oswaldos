@@ -413,6 +413,72 @@ input[type="radio"].visually-hidden {
   .stats__list {
     width: 640px; } }
 
+.features {
+  width: 320px;
+  margin: 0 auto; }
+
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 80px 25px;
+  padding-bottom: 15px; }
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.news {
+  width: 320px;
+  margin: 0 auto;
+  color: #404040;
+  background-color: #f8f5f2; }
+
+.news__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 30px; }
+
+.news__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+  color: #404040;
+  background-color: #f8f5f2; }
+
+.reviews__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.page-footer {
+  width: 320px;
+  margin: 0 auto; }
+
+.page-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 25px; }
+
+.page-footer__contacts {
+  margin-bottom: 25px; }
+
+.page-footer__social {
+  margin-bottom: 35px; }
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+
 .btn {
   display: inline-block;
   font: inherit;

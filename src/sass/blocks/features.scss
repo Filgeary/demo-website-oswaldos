@@ -1,0 +1,17 @@
+.features {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 80px 25px;
+  padding-bottom: 15px;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+// mockup
