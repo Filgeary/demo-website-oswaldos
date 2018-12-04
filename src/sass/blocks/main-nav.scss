@@ -81,19 +81,11 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .user-list {
-    width: 60px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     width: 960px;
-  }
-
-  .user-list {
-    width: 160px;
   }
 }
 

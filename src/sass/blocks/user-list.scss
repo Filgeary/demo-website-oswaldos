@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 160px;
+  }
+}
+
+// mockup
