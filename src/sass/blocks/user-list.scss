@@ -1,3 +1,29 @@
+.user-list__login {
+  position: relative;
+
+  display: block;
+  padding: 17px 21px;
+  padding-left: 49px;
+
+  line-height: 18px;
+  color: $font-light;
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.3;
+
+  polygon {
+    fill: $font-light;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     width: 60px;
