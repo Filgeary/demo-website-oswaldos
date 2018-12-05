@@ -481,15 +481,14 @@ img {
   .main-nav {
     width: auto;
     margin: 0;
-    min-height: 70px; }
+    background-color: #282832; }
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
     width: 640px;
     margin: 0 auto; }
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between; } }
+  .main-nav__toggle {
+    display: none; } }
 
 @media (min-width: 1200px) {
   .main-nav__wrapper {
@@ -521,7 +520,37 @@ img {
 
 @media (min-width: 768px) {
   .site-list {
-    width: 570px; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 570px; }
+  .site-list__item {
+    margin-right: 32px; }
+    .site-list__item:last-child {
+      margin-right: 0; }
+    .site-list__item--active {
+      position: relative; }
+      .site-list__item--active::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: -3px;
+        left: 0;
+        height: 3px;
+        background: #826550; }
+  .site-list__item a {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    background: none;
+    border: none; }
+  .site-list__item a[href]:hover {
+    color: #826550;
+    background-color: #282832; }
+  .site-list__item a[href]::active {
+    color: #f7f4f1;
+    background-color: #282832;
+    opacity: 0.3; } }
 
 @media (min-width: 1200px) {
   .site-list {
@@ -547,7 +576,23 @@ img {
 
 @media (min-width: 768px) {
   .user-list {
-    width: 60px; } }
+    width: 60px; }
+  .user-list__login {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+    font-size: 0; }
+    .user-list__login:hover .user-list__login-icon {
+      opacity: 1; }
+      .user-list__login:hover .user-list__login-icon polygon {
+        fill: #826550; }
+    .user-list__login:active .user-list__login-icon {
+      opacity: 0.3; }
+      .user-list__login:active .user-list__login-icon polygon {
+        fill: #f7f4f1; }
+  .user-list__login-icon {
+    top: 28px;
+    left: 12px; } }
 
 @media (min-width: 1200px) {
   .user-list {
