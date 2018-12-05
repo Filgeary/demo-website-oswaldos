@@ -26,6 +26,7 @@ gulp.task('serve', ['style'], function () {
 
   gulp.watch("src/sass/**/*.scss", ['style']);
   gulp.watch("src/*.html").on('change', browserSync.reload);
+  gulp.watch("src/js/*.js").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
