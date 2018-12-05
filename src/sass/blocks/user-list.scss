@@ -61,7 +61,52 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: 160px;
+    width: auto;
+    max-width: 160px;
+  }
+
+  .user-list__login {
+    position: relative;
+
+    width: auto;
+    height: auto;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $bg-page-header;
+
+      background-color: $font-light;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: $font-light;
+    }
+
+    &:hover .user-list__login-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: $bg-page-header;
+      }
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.1;
+    }
+  }
+
+  .user-list__login-icon {
+    left: 15px;
   }
 }
 

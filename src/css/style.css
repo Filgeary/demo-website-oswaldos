@@ -554,7 +554,22 @@ img {
 
 @media (min-width: 1200px) {
   .site-list {
-    width: 780px; } }
+    width: 780px; }
+  .site-list__item {
+    margin-right: 0; }
+    .site-list__item--active::after {
+      right: 30px;
+      left: 30px; }
+  .site-list__item a {
+    padding-right: 31px;
+    padding-left: 31px; }
+  .site-list__item a[href]:hover {
+    color: #282832;
+    background-color: #f7f4f1; }
+  .site-list__item a[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #f7f4f1;
+    opacity: 1; } }
 
 .user-list__login {
   position: relative;
@@ -596,7 +611,34 @@ img {
 
 @media (min-width: 1200px) {
   .user-list {
-    width: 160px; } }
+    width: auto;
+    max-width: 160px; }
+  .user-list__login {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .user-list__login:hover {
+      color: #282832;
+      background-color: #f7f4f1; }
+    .user-list__login:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #f7f4f1; }
+    .user-list__login:hover .user-list__login-icon {
+      opacity: 0.3; }
+      .user-list__login:hover .user-list__login-icon polygon {
+        fill: #282832; }
+    .user-list__login:active .user-list__login-icon {
+      opacity: 0.1; }
+  .user-list__login-icon {
+    left: 15px; } }
 
 .stats {
   width: 320px;
