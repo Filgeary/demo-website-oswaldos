@@ -43,7 +43,7 @@
   padding-bottom: 14px;
 
   text-align: center;
-  color: rgba(255, 255, 255, 0.3);
+  color: hsla(0, 0%, 100%, 0.3);
 
   background-color: $bg-darkgrey;
 }
@@ -112,11 +112,79 @@
 @media (min-width: $tablet-width) {
   .stats {
     width: 640px;
-    margin-top: -185px;
+    margin-top: -174px;
   }
 
-  .stats__list {
+  .stats__header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .stats__slogan {
+    width: 240px;
+    margin-bottom: 18px;
+
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .stats__intro {
+    width: 240px;
+    margin-top: 5px;
+    padding-right: 40px;
+
+    text-align: left;
+  }
+
+  .stats__legend--top {
+    display: block;
+    width: 240px;
+
+    color: hsla(0, 5%, 5%, 0.4);
+  }
+
+  .stats__legend--bottom {
+    display: none;
+  }
+
+  .stats__list tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stats__list tr {
+    flex-grow: 1;
+
+    width: 250px;
+    padding: 25px 35px;
+    padding-bottom: 28px;
+  }
+
+  .stats__list td {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+
+  .stats__value {
+    margin-bottom: 7px;
+
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left;
+  }
+
+  .stats__field {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  .stats__field br {
+    display: none;
   }
 }
 

@@ -16,16 +16,14 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-color: $bg-page-header;
+    width: 100%;
+    height: 470px;
+
+    background: $bg-page-header url(../img/bg-header.jpg) no-repeat center;
   }
 
   .page-header__logo {
     order: 2;
-
-    width: 100%;
-    height: 400px;
-
-    background: $bg-page-header url(../img/bg-header.jpg) no-repeat center;
   }
 
   .page-header__logo-image {
@@ -38,8 +36,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-    height: 648px;
+  .page-header {
+    height: 650px;
 
     background-position: center 0;
     background-size: cover;

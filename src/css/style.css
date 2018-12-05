@@ -366,12 +366,11 @@ img {
 
 @media (min-width: 768px) {
   .page-header {
-    background-color: #282832; }
-  .page-header__logo {
-    order: 2;
     width: 100%;
-    height: 400px;
-    background: #282832 url(../img/bg-header.jpg) no-repeat center; }
+    height: 470px;
+    background: #313030 url(../img/bg-header.jpg) no-repeat center; }
+  .page-header__logo {
+    order: 2; }
   .page-header__logo-image {
     display: block;
     width: 370px;
@@ -380,8 +379,8 @@ img {
     margin-top: 40px; } }
 
 @media (min-width: 1200px) {
-  .page-header__logo {
-    height: 648px;
+  .page-header {
+    height: 650px;
     background-position: center 0;
     background-size: cover; }
   .page-header__logo-image {
@@ -481,7 +480,7 @@ img {
   .main-nav {
     width: auto;
     margin: 0;
-    background-color: #282832; }
+    background-color: #313030; }
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
@@ -546,10 +545,10 @@ img {
     border: none; }
   .site-list__item a[href]:hover {
     color: #826550;
-    background-color: #282832; }
+    background-color: #313030; }
   .site-list__item a[href]::active {
     color: #f7f4f1;
-    background-color: #282832;
+    background-color: #313030;
     opacity: 0.3; } }
 
 @media (min-width: 1200px) {
@@ -564,7 +563,7 @@ img {
     padding-right: 31px;
     padding-left: 31px; }
   .site-list__item a[href]:hover {
-    color: #282832;
+    color: #313030;
     background-color: #f7f4f1; }
   .site-list__item a[href]:active {
     color: rgba(0, 0, 0, 0.3);
@@ -626,7 +625,7 @@ img {
     font-weight: bold;
     text-transform: uppercase; }
     .user-list__login:hover {
-      color: #282832;
+      color: #313030;
       background-color: #f7f4f1; }
     .user-list__login:active {
       color: rgba(0, 0, 0, 0.3);
@@ -634,7 +633,7 @@ img {
     .user-list__login:hover .user-list__login-icon {
       opacity: 0.3; }
       .user-list__login:hover .user-list__login-icon polygon {
-        fill: #282832; }
+        fill: #313030; }
     .user-list__login:active .user-list__login-icon {
       opacity: 0.1; }
   .user-list__login-icon {
@@ -722,9 +721,52 @@ img {
 @media (min-width: 768px) {
   .stats {
     width: 640px;
-    margin-top: -185px; }
-  .stats__list {
-    display: flex; } }
+    margin-top: -174px; }
+  .stats__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .stats__slogan {
+    width: 240px;
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    text-transform: none; }
+  .stats__intro {
+    width: 240px;
+    margin-top: 5px;
+    padding-right: 40px;
+    text-align: left; }
+  .stats__legend--top {
+    display: block;
+    width: 240px;
+    color: rgba(13, 12, 12, 0.4); }
+  .stats__legend--bottom {
+    display: none; }
+  .stats__list tbody {
+    display: flex;
+    flex-wrap: wrap; }
+  .stats__list tr {
+    flex-grow: 1;
+    width: 250px;
+    padding: 25px 35px;
+    padding-bottom: 28px; }
+  .stats__list td {
+    display: block;
+    width: auto;
+    padding: 0; }
+  .stats__value {
+    margin-bottom: 7px;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left; }
+  .stats__field {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left; }
+  .stats__field br {
+    display: none; } }
 
 @media (min-width: 1200px) {
   .stats {
