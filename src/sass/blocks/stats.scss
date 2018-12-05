@@ -156,9 +156,7 @@
   }
 
   .stats__list tr {
-    flex-grow: 1;
-
-    width: 250px;
+    width: 50%;
     padding: 25px 35px;
     padding-bottom: 28px;
   }
@@ -191,15 +189,34 @@
 @media (min-width: $desktop-width) {
   .stats {
     display: flex;
+
     width: 960px;
     margin-top: -160px;
   }
 
   .stats__header {
+    flex-grow: 1;
+
     width: 240px;
   }
 
+  .stats__slogan {
+    width: auto;
+    margin-bottom: 42px;
+  }
+
+  .stats__intro {
+    width: auto;
+    margin-bottom: 32px;
+    padding-right: 30px;
+  }
+
+  .stats__legend--top {
+    width: auto;
+  }
+
   .stats__list {
+    display: flex;
     width: 640px;
   }
 }
