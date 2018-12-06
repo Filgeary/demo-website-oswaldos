@@ -1,6 +1,5 @@
 .stats {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 }
 
 .stats__header {
@@ -111,7 +110,9 @@
 
 @media (min-width: $tablet-width) {
   .stats {
-    width: 640px;
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: -174px;
   }
 
@@ -122,28 +123,26 @@
   }
 
   .stats__slogan {
-    width: 240px;
+    width: 50%;
     margin-bottom: 18px;
 
     font-size: 40px;
     line-height: 40px;
-    text-align: left;
     text-transform: none;
   }
 
   .stats__intro {
-    width: 240px;
+    width: 37.5%;
     margin-top: 5px;
-    padding-right: 40px;
-
-    text-align: left;
+    padding: 0;
   }
 
   .stats__legend--top {
     display: block;
-    width: 240px;
+    width: 50%;
 
     color: hsla(0, 5%, 5%, 0.4);
+    text-align: center;
   }
 
   .stats__legend--bottom {
@@ -172,13 +171,11 @@
 
     font-size: 72px;
     line-height: 72px;
-    text-align: left;
   }
 
   .stats__field {
     font-size: 20px;
     line-height: 27px;
-    text-align: left;
   }
 
   .stats__field br {
@@ -189,14 +186,12 @@
 @media (min-width: $desktop-width) {
   .stats {
     display: flex;
-
-    width: 960px;
     margin-top: -160px;
   }
 
   .stats__header {
     flex-grow: 1;
-
+    flex-direction: column;
     width: 240px;
   }
 
@@ -213,10 +208,12 @@
 
   .stats__legend--top {
     width: auto;
+    margin-top: auto;
   }
 
   .stats__list {
     display: flex;
+    flex-grow: 1;
     width: 640px;
   }
 }

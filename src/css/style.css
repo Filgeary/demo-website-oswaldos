@@ -484,7 +484,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 84%;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto; }
   .main-nav__toggle {
     display: none; } }
@@ -637,8 +637,7 @@ img {
     left: 15px; } }
 
 .stats {
-  width: 320px;
-  margin: 0 auto; }
+  width: auto; }
 
 .stats__header {
   padding: 30px 40px;
@@ -717,28 +716,29 @@ img {
 
 @media (min-width: 768px) {
   .stats {
-    width: 640px;
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: -174px; }
   .stats__header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
   .stats__slogan {
-    width: 240px;
+    width: 50%;
     margin-bottom: 18px;
     font-size: 40px;
     line-height: 40px;
-    text-align: left;
     text-transform: none; }
   .stats__intro {
-    width: 240px;
+    width: 37.5%;
     margin-top: 5px;
-    padding-right: 40px;
-    text-align: left; }
+    padding: 0; }
   .stats__legend--top {
     display: block;
-    width: 240px;
-    color: rgba(13, 12, 12, 0.4); }
+    width: 50%;
+    color: rgba(13, 12, 12, 0.4);
+    text-align: center; }
   .stats__legend--bottom {
     display: none; }
   .stats__list tbody {
@@ -755,22 +755,20 @@ img {
   .stats__value {
     margin-bottom: 7px;
     font-size: 72px;
-    line-height: 72px;
-    text-align: left; }
+    line-height: 72px; }
   .stats__field {
     font-size: 20px;
-    line-height: 27px;
-    text-align: left; }
+    line-height: 27px; }
   .stats__field br {
     display: none; } }
 
 @media (min-width: 1200px) {
   .stats {
     display: flex;
-    width: 960px;
     margin-top: -160px; }
   .stats__header {
     flex-grow: 1;
+    flex-direction: column;
     width: 240px; }
   .stats__slogan {
     width: auto;
@@ -780,9 +778,11 @@ img {
     margin-bottom: 32px;
     padding-right: 30px; }
   .stats__legend--top {
-    width: auto; }
+    width: auto;
+    margin-top: auto; }
   .stats__list {
     display: flex;
+    flex-grow: 1;
     width: 640px; } }
 
 .features {
