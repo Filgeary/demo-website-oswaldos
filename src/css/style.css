@@ -388,9 +388,8 @@ img {
 
 .main-nav {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
-  min-height: 50px;
+  width: auto;
+  min-height: 51px;
   background-color: #826550; }
 
 .main-nav__toggle {
@@ -484,14 +483,11 @@ img {
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
+    width: 84%;
+    max-width: 960px;
     margin: 0 auto; }
   .main-nav__toggle {
     display: none; } }
-
-@media (min-width: 1200px) {
-  .main-nav__wrapper {
-    width: 960px; } }
 
 .site-list {
   font-weight: bold; }
@@ -522,9 +518,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    flex-grow: 1;
     width: 570px; }
   .site-list__item {
-    margin-right: 32px; }
+    margin-right: 7%; }
     .site-list__item:last-child {
       margin-right: 0; }
     .site-list__item--active {
