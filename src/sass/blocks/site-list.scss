@@ -18,7 +18,8 @@
 }
 
 .site-list a[href] {
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #755a46;
     border-top-color: #755a46;
   }
@@ -27,6 +28,12 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: #6a4d38;
     border-top-color: #6a4d38;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    text-align: center;
   }
 }
 
@@ -74,13 +81,14 @@
   }
 
   .site-list__item a[href] {
-    &:hover {
+    &:hover,
+    &:focus {
       color: $link-main-nav;
 
       background-color: $bg-page-header;
     }
 
-    &::active {
+    &:active {
       color: $font-light;
 
       background-color: $bg-page-header;
@@ -109,7 +117,8 @@
   }
 
   .site-list__item a[href] {
-    &:hover {
+    &:hover,
+    &:focus {
       color: $bg-page-header;
 
       background-color: $font-light;

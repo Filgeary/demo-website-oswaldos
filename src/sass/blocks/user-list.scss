@@ -24,6 +24,37 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .user-list__login {
+    text-align: center;
+    padding: 17px 21px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($font-light, 20%);
+    }
+
+    &:hover .user-list__login-icon,
+    &:focus .user-list__login-icon {
+      opacity: 0.8;
+
+      polygon {
+        fill: $font-light;
+      }
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: $font-light;
+      }
+    }
+
+  }
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     width: 60px;
@@ -36,7 +67,8 @@
 
     font-size: 0;
 
-    &:hover .user-list__login-icon {
+    &:hover .user-list__login-icon,
+    &:focus .user-list__login-icon {
       opacity: 1;
 
       polygon {
@@ -80,7 +112,8 @@
     font-weight: bold;
     text-transform: uppercase;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $bg-page-header;
 
       background-color: $font-light;
@@ -92,7 +125,8 @@
       background-color: $font-light;
     }
 
-    &:hover .user-list__login-icon {
+    &:hover .user-list__login-icon,
+    &:focus .user-list__login-icon {
       opacity: 0.3;
 
       polygon {
