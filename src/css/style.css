@@ -756,7 +756,7 @@ img {
     line-height: 40px;
     text-transform: none; }
   .stats__intro {
-    width: 37.5%;
+    width: 40%;
     margin-top: 5px;
     padding: 0; }
   .stats__legend--top {
@@ -800,8 +800,7 @@ img {
     margin-bottom: 42px; }
   .stats__intro {
     width: auto;
-    margin-bottom: 32px;
-    padding-right: 30px; }
+    margin-bottom: 32px; }
   .stats__legend--top {
     width: auto;
     margin-top: auto; }
@@ -900,21 +899,68 @@ img {
     background-position: center 0; } }
 
 .news {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   color: #404040;
-  background-color: #f8f5f2; }
+  background-color: #f8f5f2;
+  border-bottom: 1px solid #e5ddd5; }
 
 .news__wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 30px; }
+
+.news__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
 
 .news__list {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.news__item {
+  display: flex;
+  margin-bottom: 20px;
+  min-height: 80px;
+  border-bottom: 1px solid #e5ddd5; }
+  .news__item:last-child {
+    border-bottom: none; }
+
+.news__date-day-wrapper {
+  position: relative;
+  top: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 60px;
+  margin-right: 20px;
+  color: #f7f4f1;
+  background-image: url(../img/icon-news-shape.png); }
+
+.news__date {
+  position: relative;
+  top: -9px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center; }
+
+.news__day {
+  position: relative;
+  top: 14px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center; }
+
+.news__text {
+  flex-grow: 1;
+  width: 75%;
+  margin: 0;
+  margin-bottom: 20px; }
 
 @media (min-width: 768px) {
   .news {
@@ -1011,17 +1057,20 @@ img {
 
 .btn {
   display: inline-block;
+  width: 100%;
+  padding: 12px;
   font: inherit;
+  font-weight: bold;
   text-align: center;
-  color: #fff;
+  color: royalblue;
+  text-transform: uppercase;
   vertical-align: middle;
-  background-color: #4169E1;
-  border: none;
+  border: 1px solid #9aafef;
   cursor: pointer; }
   .btn:hover, .btn:focus, .btn:active {
-    color: #fff;
-    background-color: #4191e1; }
+    color: #f7f4f1;
+    background-color: royalblue; }
   .btn:disabled {
     cursor: default;
     opacity: 0.5;
-    background-color: #ccc; }
+    background-color: #cccccc; }

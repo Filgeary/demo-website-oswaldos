@@ -1,13 +1,16 @@
 .btn {
   display: inline-block;
+  width: 100%;
+  padding: 12px;
 
   font: inherit;
+  font-weight: bold;
   text-align: center;
   color: $btn-color;
+  text-transform: uppercase;
   vertical-align: middle;
 
-  background-color: $btn-bg-color;
-  border: none;
+  border: 1px solid $btn-border-color;
 
   cursor: pointer;
 
@@ -24,3 +27,5 @@
     background-color: $btn-disabled;
   }
 }
+
+// mockup

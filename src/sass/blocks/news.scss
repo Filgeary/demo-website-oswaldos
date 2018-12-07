@@ -1,21 +1,81 @@
 .news {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 
   color: $font-dark;
 
   background-color: $bg-lightgrey;
+  border-bottom: 1px solid $border-decor;
 }
 
 .news__wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 30px;
 }
 
+.news__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .news__list {
   @include reset-list;
+}
+
+.news__item {
+  display: flex;
+  margin-bottom: 20px;
+  min-height: 80px;
+  border-bottom: 1px solid $border-decor;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.news__date-day-wrapper {
+  position: relative;
+  top: 7px;
+
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 60px;
+  margin-right: 20px;
+
+  color: $font-light;
+
+  background-image: url(../img/icon-news-shape.png);
+}
+
+.news__date {
+  position: relative;
+  top: -9px;
+
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.news__day {
+  position: relative;
+  top: 14px;
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+
+.news__text {
+  flex-grow: 1;
+  width: 75%;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
