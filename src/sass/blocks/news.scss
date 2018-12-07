@@ -132,9 +132,22 @@
 
 @media (min-width: $desktop-width) {
   .news__wrapper {
-    width: 960px;
+    max-width: 1200px;
     padding-top: 60px;
     padding-bottom: 45px;
+  }
+
+  .news__item {
+    flex-grow: 1;
+    width: 30%;
+
+    &:nth-child(3) {
+      display: flex;
+    }
+  }
+
+  .news__title {
+    margin-left: 70px;
   }
 }
 
