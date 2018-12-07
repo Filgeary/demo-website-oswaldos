@@ -78,6 +78,18 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .news__item {
+    &:nth-child(3) {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      border-bottom: none;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .news {
     width: auto;
