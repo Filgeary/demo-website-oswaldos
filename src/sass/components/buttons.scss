@@ -28,6 +28,17 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .reviews__write {
+    display: none;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .news__to-all {
     width: 300px;
