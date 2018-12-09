@@ -110,7 +110,7 @@
 
 @media (min-width: $tablet-width) {
   .stats {
-    width: 84%;
+    width: 83.3%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -174px;
@@ -186,6 +186,7 @@
 @media (min-width: $desktop-width) {
   .stats {
     display: flex;
+    width: 80%;
     margin-top: -160px;
   }
 
