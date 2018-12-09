@@ -1,0 +1,24 @@
+.contacts__title {
+  display: block;
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+
+.contacts__text {
+  text-align: center;
+}
+
+.contacts__phone {
+  margin-top: 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .contacts__phone-mobile {
+    display: none;
+  }
+}
+
+// mockup

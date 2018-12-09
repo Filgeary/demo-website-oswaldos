@@ -1,10 +1,10 @@
 .page-footer {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
 .page-footer__wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 25px;
@@ -16,12 +16,6 @@
 
 .page-footer__social {
   margin-bottom: 35px;
-}
-
-.social__list {
-  @include reset-list;
-
-  display: flex;
 }
 
 @media (min-width: $tablet-width) {

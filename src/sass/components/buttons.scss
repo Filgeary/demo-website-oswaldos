@@ -28,6 +28,24 @@
   }
 }
 
+// Custom buttons
+// -------------------------------------------------
+
+.contacts__phone {
+  color: $btn-border-color;
+}
+
+.copyright__link {
+  color: $font-light;
+  border: 1px solid #3f3f3f;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #3f3f3f;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .reviews__write {
     display: none;
