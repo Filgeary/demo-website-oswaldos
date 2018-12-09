@@ -40,7 +40,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .news__to-all {
+  .news__to-all,
+  .reviews__write {
     width: 300px;
   }
 }

@@ -976,6 +976,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 83.3%;
     padding-top: 40px;
     padding-bottom: 20px; }
   .news__list {
@@ -1035,10 +1036,12 @@ img {
   position: relative;
   top: 8px;
   margin: 0;
-  margin-right: 20px; }
+  margin-right: 20px;
+  overflow: hidden; }
 
 .reviews__author-image {
-  display: block; }
+  display: block;
+  object-fit: cover; }
 
 .reviews__item-wrapper {
   flex-grow: 1;
@@ -1059,11 +1062,57 @@ img {
 
 @media (min-width: 768px) {
   .reviews {
-    width: auto; }
+    max-width: 1200px; }
   .reviews__wrapper {
-    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 83.3%;
     padding-top: 45px;
-    padding-bottom: 70px; } }
+    padding-bottom: 70px; }
+  .reviews__title {
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left; }
+  .reviews__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border: 1px solid #e5ddd5; }
+  .reviews__item {
+    flex-grow: 1;
+    width: 84.3%;
+    margin-top: 35px; }
+  .reviews__item-wrapper {
+    width: 73.8%;
+    margin-right: 50px; }
+  .reviews__author-picture {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    margin-left: 30px; }
+  .reviews__toggles {
+    position: relative;
+    top: -15px;
+    min-width: 150px;
+    margin: 0 auto;
+    background-color: #f8f5f2; }
+  .reviews__prev,
+  .reviews__next {
+    width: 50px;
+    border: none;
+    background-color: #f8f5f2;
+    cursor: pointer; }
+  .reviews__prev {
+    order: -1;
+    border-right: 1px solid #e5ddd5;
+    background: url(../img/icon-left-arrow.svg) no-repeat center;
+    background-size: 15px 15px; }
+  .reviews__next {
+    border-left: 1px solid #e5ddd5;
+    background: url(../img/icon-right-arrow.svg) no-repeat center;
+    background-size: 15px 15px; } }
 
 @media (min-width: 1200px) {
   .reviews__wrapper {
@@ -1145,5 +1194,6 @@ img {
     display: none; } }
 
 @media (min-width: 768px) {
-  .news__to-all {
+  .news__to-all,
+  .reviews__write {
     width: 300px; } }
