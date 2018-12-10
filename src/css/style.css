@@ -1216,9 +1216,7 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid #3f3f3f;
-  border-bottom: 1px solid #3f3f3f; }
+  flex-wrap: wrap; }
 
 .social__item {
   display: flex;
@@ -1226,9 +1224,9 @@ img {
   flex-grow: 1;
   width: 33%;
   height: 100px;
-  border-right: 1px solid #3f3f3f; }
-  .social__item:last-child {
-    border-right: none; }
+  border: 1px solid #3f3f3f; }
+  .social__item:nth-child(2), .social__item:nth-child(3) {
+    border-left: none; }
 
 .social__link {
   margin: auto;
