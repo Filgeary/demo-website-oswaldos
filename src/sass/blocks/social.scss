@@ -29,4 +29,39 @@
   padding: 25px 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .social__link {
+    padding: 25px 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__title {
+    display: block;
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+
+  .social__item {
+    margin-right: 10px;
+    width: 25%;
+    height: auto;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      border-left: 1px solid #3f3f3f;
+    }
+  }
+
+  .social__item svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social__link {
+    padding: 15px;
+  }
+}
+
 // mockup

@@ -45,16 +45,20 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 960px;
+    width: 80%;
   }
 
   .page-footer__contacts {
-    width: 360px;
+    width: 30%;
   }
 
   .page-footer__social {
     order: 0;
-    width: 165px;
+    width: 25%;
+  }
+
+  .page-footer__copyright {
+    width: 20%;
   }
 }
 
