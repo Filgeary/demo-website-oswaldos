@@ -19,26 +19,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: auto;
-  }
-
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 640px;
+    width: 83.7%;
+    max-width: 1200px;
     padding-top: 55px;
-    padding-bottom: 60px;
+    padding-bottom: 25px;
   }
 
   .page-footer__contacts {
-    width: 400px;
+    width: 50%;
   }
 
   .page-footer__social {
     order: 3;
-    width: 640px;
+    width: 100%;
+  }
+
+  .page-footer__copyright {
+    width: 25%;
   }
 }
 

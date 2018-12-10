@@ -60,7 +60,15 @@
 @media (min-width: $tablet-width) {
   .news__to-all,
   .reviews__write {
-    width: 300px;
+    width: 25%;
+  }
+
+  .contacts__phone {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-color;
+    }
   }
 }
 

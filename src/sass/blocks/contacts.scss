@@ -21,4 +21,10 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__title,
+  .contacts__text {
+    text-align: left;
+  }
+}
 // mockup
