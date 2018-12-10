@@ -1,6 +1,18 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
+var mobileOnly = window.matchMedia('(max-width: 767px)');
+var contactsPhone = document.querySelector('.contacts__phone');
+
+// '.contacts__phone' like a button on Mobile
+mobileOnly.addListener(function () {
+  if (mobileOnly.matches) {
+    contactsPhone.classList.add('btn');
+  } else {
+    contactsPhone.classList.remove('btn');
+  }
+});
+
 // Main Navigation without JS
 navMain.classList.remove('main-nav--nojs');
 
