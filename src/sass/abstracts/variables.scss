@@ -1,23 +1,30 @@
+// viewports
 $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// fonts
 $font-light: #f7f4f1;
 $font-dark: #404040;
 
+// backgrounds
 $bg-page-header: hsl(0, 0%, 6%);
-
 $bg-darkgrey: #292929;
 $bg-lightgrey: #f8f5f2;
 
+// decorations
 $border-decor: #e5ddd5;
 
+// links
 $link-main-nav: #826550;
 $link-color: #4169E1;
 $link-hover-color: #1f49c7;
 
 // buttons
-
 $btn-color: hsl(225, 73%, 57%);
 $btn-hover-color: $font-light;
 
