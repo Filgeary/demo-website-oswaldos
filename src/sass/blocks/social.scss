@@ -26,12 +26,14 @@
 
 .social__link {
   margin: auto;
-  padding: 25px 30px;
+  padding: 25px 25%;
+  padding-top: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .social__link {
-    padding: 25px 70px;
+    padding: 25px 30%;
+    padding-top: 29px;
   }
 }
 
@@ -44,13 +46,18 @@
   }
 
   .social__item {
+    flex-grow: 0;
     margin-right: 10px;
-    width: 25%;
+    width: 30%;
     height: auto;
 
     &:nth-child(2),
     &:nth-child(3) {
       border-left: 1px solid #3f3f3f;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -61,6 +68,7 @@
 
   .social__link {
     padding: 15px;
+    padding-top: 19px;
   }
 }
 

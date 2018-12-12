@@ -1253,11 +1253,13 @@ img {
 
 .social__link {
   margin: auto;
-  padding: 25px 30px; }
+  padding: 25px 25%;
+  padding-top: 29px; }
 
 @media (min-width: 768px) {
   .social__link {
-    padding: 25px 70px; } }
+    padding: 25px 30%;
+    padding-top: 29px; } }
 
 @media (min-width: 1200px) {
   .social__title {
@@ -1265,16 +1267,20 @@ img {
     margin-bottom: 10px;
     text-align: center; }
   .social__item {
+    flex-grow: 0;
     margin-right: 10px;
-    width: 25%;
+    width: 30%;
     height: auto; }
     .social__item:nth-child(2), .social__item:nth-child(3) {
       border-left: 1px solid #3f3f3f; }
+    .social__item:last-child {
+      margin-right: 0; }
   .social__item svg {
     width: 25px;
     height: 25px; }
   .social__link {
-    padding: 15px; } }
+    padding: 15px;
+    padding-top: 19px; } }
 
 .copyright__text {
   display: block;
