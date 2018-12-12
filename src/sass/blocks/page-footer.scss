@@ -1,12 +1,14 @@
 .page-footer {
   width: auto;
   margin: 0 auto;
+
+  background-color: $bg-darkgrey;
 }
 
 .page-footer__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 65px;
   padding-bottom: 25px;
 }
 
@@ -16,6 +18,12 @@
 
 .page-footer__social {
   margin-bottom: 35px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer {
+    clip-path: polygon(50% 30px, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
 }
 
 @media (min-width: $tablet-width) {

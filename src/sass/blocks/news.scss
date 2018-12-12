@@ -5,12 +5,14 @@
 
   background-color: $bg-lightgrey;
   border-bottom: 1px solid $border-decor;
+
+  clip-path: polygon(50% 35px, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .news__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 55px;
   padding-bottom: 30px;
 }
 
@@ -93,6 +95,8 @@
 @media (min-width: $tablet-width) {
   .news {
     width: auto;
+
+    clip-path: polygon(50% 40px, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 
   .news__wrapper {
@@ -101,7 +105,7 @@
     justify-content: space-between;
     align-items: center;
     width: 83.3%;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 20px;
   }
 
@@ -132,10 +136,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .news {
+    clip-path: polygon(50% 65px, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
   .news__wrapper {
     width: 80%;
     max-width: 1200px;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 45px;
   }
 

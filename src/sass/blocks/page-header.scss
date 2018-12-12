@@ -1,6 +1,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
+  background-color: $bg-darkgrey;
 }
 
 .page-header__logo {
