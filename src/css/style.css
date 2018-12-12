@@ -959,7 +959,7 @@ img {
   height: 60px;
   margin-right: 20px;
   color: #f7f4f1;
-  background-image: url(../img/icon-news-shape.png); }
+  background: url(../img/icon-news-shape.svg) no-repeat; }
 
 .news__date {
   position: relative;
