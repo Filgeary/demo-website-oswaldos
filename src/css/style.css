@@ -1043,7 +1043,7 @@ img {
   width: 87.5%;
   margin: 0 auto;
   padding-top: 30px;
-  padding-bottom: 20px; }
+  padding-bottom: 50px; }
 
 .reviews__title {
   font-size: 30px;
@@ -1176,7 +1176,7 @@ img {
 .page-footer__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 45px;
   padding-bottom: 25px; }
 
 .page-footer__contacts {
@@ -1184,10 +1184,6 @@ img {
 
 .page-footer__social {
   margin-bottom: 35px; }
-
-@media (max-width: 767px) {
-  .page-footer {
-    clip-path: polygon(50% 30px, 100% 0, 100% 100%, 0 100%, 0 0); } }
 
 @media (min-width: 768px) {
   .page-footer__wrapper {
