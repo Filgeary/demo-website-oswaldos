@@ -313,9 +313,7 @@ template {
   src: local("PT Sans Narrow"), local("PTSans-Narrow"), url("../fonts/pt-sans-narrow-v9-latin-regular.woff2") format("woff2"), url("../fonts/pt-sans-narrow-v9-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
-*,
-::before,
-::after {
+* {
   box-sizing: border-box; }
 
 body {
@@ -328,7 +326,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #f7f4f1;
-  background-color: #f8f5f2; }
+  background-color: #292929; }
 
 a {
   color: #4169E1;
@@ -354,8 +352,7 @@ img {
 
 .page-header {
   display: flex;
-  flex-direction: column;
-  background-color: #292929; }
+  flex-direction: column; }
 
 .page-header__logo {
   height: 85px;
@@ -679,9 +676,6 @@ img {
       opacity: 0.1; }
   .user-list__login-icon {
     left: 15px; } }
-
-.page-main {
-  background-color: #292929; }
 
 .stats {
   width: auto; }
@@ -1177,8 +1171,7 @@ img {
 
 .page-footer {
   width: auto;
-  margin: 0 auto;
-  background-color: #292929; }
+  margin: 0 auto; }
 
 .page-footer__wrapper {
   width: 87.5%;
