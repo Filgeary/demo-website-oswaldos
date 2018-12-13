@@ -890,11 +890,11 @@ img {
       border-bottom: none; }
   .features__title {
     text-align: left; }
+    .features__title--fast, .features__title--cool, .features__title--price {
+      background-position: 0 0; }
   .features__desc {
     margin-bottom: 45px;
     text-align: left; }
-  .features__title--fast, .features__title--cool, .features__title--price {
-    background-position: 0 0; }
   .features__toggles {
     display: none; } }
 
@@ -913,10 +913,10 @@ img {
   .features__title {
     line-height: 42px;
     text-align: center; }
+    .features__title--fast, .features__title--cool, .features__title--price {
+      background-position: center 0; }
   .features__desc {
-    text-align: center; }
-  .features__title--fast, .features__title--cool, .features__title--price {
-    background-position: center 0; } }
+    text-align: center; } }
 
 .news {
   width: auto;

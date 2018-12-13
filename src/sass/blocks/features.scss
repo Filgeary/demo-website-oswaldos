@@ -79,19 +79,18 @@
 
   .features__title {
     text-align: left;
-  }
 
-  .features__desc {
-    margin-bottom: 45px;
-    text-align: left;
-  }
-
-  .features__title {
     &--fast,
     &--cool,
     &--price {
       background-position: 0 0;
     }
+  }
+
+  .features__desc {
+    margin-bottom: 45px;
+
+    text-align: left;
   }
 
   .features__toggles {
@@ -121,18 +120,16 @@
   .features__title {
     line-height: 42px;
     text-align: center;
-  }
 
-  .features__desc {
-    text-align: center;
-  }
-
-  .features__title {
     &--fast,
     &--cool,
     &--price {
       background-position: center 0;
     }
+  }
+
+  .features__desc {
+    text-align: center;
   }
 }
 
