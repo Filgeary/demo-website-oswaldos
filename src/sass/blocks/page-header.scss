@@ -10,9 +10,9 @@
 }
 
 .page-header__logo-image {
-  width: 190px;
+  width: 170px;
   height: auto;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
 
   .page-header__logo-image {
     display: block;
-    width: 300px;
+    width: 270px;
     height: auto;
     margin: 0 auto;
     margin-top: 40px;
@@ -43,7 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    height: 720px;
+    height: 670px;
 
     background: $bg-page-header url(../img/bg-header-desktop@1x.jpg) no-repeat center;
     background-size: cover;
@@ -55,8 +55,8 @@
   }
 
   .page-header__logo-image {
-    width: 350px;
-    margin-top: 57px;
+    width: 320px;
+    margin-top: 55px;
   }
 }
 

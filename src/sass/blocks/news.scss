@@ -81,6 +81,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .news {
+    border-bottom: none;
+  }
+
   .news__item {
     &:nth-child(3) {
       display: none;
