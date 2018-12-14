@@ -1,0 +1,21 @@
+.slider__toggle {
+  margin-right: 25px;
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  border: 1px solid darken($border-decor, 30%);
+  background-color: inherit;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    background-color: darken($border-decor, 60%);
+  }
+}
+
+// mockup

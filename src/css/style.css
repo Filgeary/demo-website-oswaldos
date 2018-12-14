@@ -1330,3 +1330,16 @@ img {
     width: 25%; }
   .contacts__phone:hover, .contacts__phone:focus, .contacts__phone:active {
     color: #4169E1; } }
+
+.slider__toggle {
+  margin-right: 25px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ab9177;
+  background-color: inherit;
+  cursor: pointer; }
+  .slider__toggle:last-child {
+    margin-right: 0; }
+  .slider__toggle--active {
+    background-color: #544434; }
