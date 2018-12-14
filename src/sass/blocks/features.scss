@@ -49,10 +49,6 @@
   background-size: 95px 94px;
 }
 
-.features__toggles {
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .features {
     width: auto;
@@ -91,10 +87,6 @@
     margin-bottom: 45px;
 
     text-align: left;
-  }
-
-  .features__toggles {
-    display: none;
   }
 }
 
