@@ -1117,7 +1117,8 @@ img {
     width: 80px;
     height: 80px;
     margin-right: 25px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    border-radius: 50%; }
   .reviews__author-name {
     display: block;
     margin-top: 35px; }
@@ -1157,7 +1158,8 @@ img {
     width: 250px;
     height: auto;
     margin: 0;
-    margin-right: 70px; }
+    margin-right: 70px;
+    border-radius: 0; }
   .reviews__prev,
   .reviews__next {
     border: 1px solid #e5ddd5; }
