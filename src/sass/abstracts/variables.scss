@@ -12,7 +12,7 @@ $font-light: #f7f4f1;
 $font-dark: #404040;
 
 // backgrounds
-$bg-page-header: hsl(0, 0%, 6%);
+$bg-page-header: #0f0f0f;
 $bg-darkgrey: #292929;
 $bg-lightgrey: #f8f5f2;
 
@@ -21,15 +21,15 @@ $border-decor: #e5ddd5;
 
 // links
 $link-main-nav: #826550;
-$link-color: #4169E1;
+$link-color: #4169e1;
 $link-hover-color: #1f49c7;
 
 // buttons
-$btn-color: hsl(225, 73%, 57%);
+$btn-color: #4169e1;
 $btn-hover-color: $font-light;
 
 $btn-bg-hover-color: $btn-color;
 
 $btn-border-color: lighten($btn-color, 20%);
 
-$btn-disabled: hsl(0, 0%, 80%);
+$btn-disabled: #ccc;

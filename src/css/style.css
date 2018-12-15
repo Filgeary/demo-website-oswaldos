@@ -329,7 +329,7 @@ body {
   background-color: #292929; }
 
 a {
-  color: #4169E1;
+  color: #4169e1;
   text-decoration: none; }
   a:hover, a:focus {
     color: #1f49c7; }
@@ -1301,21 +1301,21 @@ img {
   font: inherit;
   font-weight: bold;
   text-align: center;
-  color: royalblue;
+  color: #4169e1;
   text-transform: uppercase;
   vertical-align: middle;
-  border: 1px solid #9aafef;
+  border: 1px solid #99afef;
   cursor: pointer; }
   .btn:hover, .btn:focus, .btn:active {
     color: #f7f4f1;
-    background-color: royalblue; }
+    background-color: #4169e1; }
   .btn:disabled {
     cursor: default;
     opacity: 0.5;
-    background-color: #cccccc; }
+    background-color: #ccc; }
 
 .contacts__phone {
-  color: #9aafef; }
+  color: #99afef; }
 
 .copyright__link {
   color: #f7f4f1;
@@ -1335,7 +1335,7 @@ img {
   .reviews__write {
     width: 25%; }
   .contacts__phone:hover, .contacts__phone:focus, .contacts__phone:active {
-    color: #4169E1; } }
+    color: #4169e1; } }
 
 .slider__toggle {
   margin-right: 25px;
