@@ -47,23 +47,24 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .reviews__write {
-    display: none;
-  }
 
+  .reviews__write,
   .reviews__prev,
-  .reviews__next {
+  .reviews__next,
+  .works__to-home {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
+
   .news__to-all,
   .reviews__write {
     width: 25%;
   }
 
   .contacts__phone {
+
     &:hover,
     &:focus,
     &:active {

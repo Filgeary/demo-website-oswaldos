@@ -37,3 +37,9 @@
 .pricing__value {
   width: 30%;
 }
+
+@media (max-width: $mobile-width-only) {
+  .pricing__order-number {
+    display: none;
+  }
+}

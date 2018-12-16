@@ -1228,6 +1228,10 @@ img {
 .pricing__value {
   width: 30%; }
 
+@media (max-width: 767px) {
+  .pricing__order-number {
+    display: none; } }
+
 .page-footer {
   width: auto;
   margin: 0 auto; }
@@ -1380,10 +1384,10 @@ img {
     background-color: #3f3f3f; }
 
 @media (max-width: 767px) {
-  .reviews__write {
-    display: none; }
+  .reviews__write,
   .reviews__prev,
-  .reviews__next {
+  .reviews__next,
+  .works__to-home {
     display: none; } }
 
 @media (min-width: 768px) {
