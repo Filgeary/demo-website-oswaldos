@@ -1,0 +1,30 @@
+.works {
+  width: auto;
+  margin: 0 auto;
+
+  color: $font-dark;
+
+  background-color: $bg-lightgrey;
+}
+
+.works__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.works__item {
+  padding-bottom: 30px;
+}
+
+.works__services-list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works__services-item {
+  width: 45%;
+}
