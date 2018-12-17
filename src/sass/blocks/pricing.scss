@@ -32,14 +32,32 @@
 
 .pricing__text {
   width: 60%;
+
+  text-align: center;
 }
 
 .pricing__value {
   width: 30%;
+
+  text-align: center;
 }
 
 @media (max-width: $mobile-width-only) {
   .pricing__order-number {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pricing__order-number {
+    display: block;
+    width: 10%;
+
+    text-align: center;
+  }
+
+  .pricing__text br,
+  .pricing__discount-text br {
     display: none;
   }
 }
