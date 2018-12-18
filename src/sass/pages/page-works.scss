@@ -3,3 +3,9 @@
     height: 300px;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .page-works__header {
+    height: 400px;
+  }
+}
