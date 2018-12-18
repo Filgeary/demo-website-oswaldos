@@ -1302,6 +1302,10 @@ img {
     display: none; } }
 
 @media (min-width: 768px) {
+  .pricing__wrapper {
+    width: 83.3%;
+    max-width: 1200px;
+    padding: 40px 0; }
   .pricing__order-number {
     display: block;
     width: 10%;
@@ -1309,6 +1313,22 @@ img {
   .pricing__text br,
   .pricing__discount-text br {
     display: none; } }
+
+@media (min-width: 1200px) {
+  .pricing__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    padding: 60px 0; }
+  .pricing__title {
+    width: 100%; }
+  .pricing__list {
+    width: 60%;
+    flex-grow: 1;
+    margin-right: 7%; }
+  .pricing__discount-text-wrapper {
+    width: 30%; } }
 
 .page-footer {
   width: auto;
