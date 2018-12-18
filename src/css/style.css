@@ -1220,7 +1220,6 @@ img {
     width: 60%; }
   .works__item {
     display: flex;
-    justify-content: space-between;
     padding-bottom: 40px; }
   .works__image-wrapper {
     width: 42.2%;
@@ -1228,11 +1227,42 @@ img {
   .works__description-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 50%;
     padding-bottom: 30px;
     padding-right: 30px; }
   .works__services-list {
     margin-top: auto; } }
+
+@media (min-width: 1200px) {
+  .works__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    padding: 75px 0; }
+  .works__header {
+    width: 100%; }
+  .works__item {
+    flex-direction: column;
+    width: 30%;
+    margin-right: 5%; }
+    .works__item--main {
+      flex-direction: row;
+      width: 100%; }
+    .works__item--main, .works__item:last-child {
+      margin-right: 0; }
+  .works__image-wrapper {
+    width: auto;
+    margin-right: 0; }
+    .works__image-wrapper--main {
+      width: 50%;
+      margin-right: 5%; }
+  .works__description-wrapper {
+    flex-grow: 1;
+    width: auto; }
+    .works__description-wrapper--main {
+      width: 45%; } }
 
 .pricing {
   width: auto;
