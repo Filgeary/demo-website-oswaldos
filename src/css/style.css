@@ -1344,7 +1344,7 @@ img {
 
 .pricing__discount-icon {
   width: 50%;
-  background: url(../../img/icon-clock.svg) no-repeat center;
+  background: url(../img/icon-clock.svg) no-repeat center;
   background-size: 65px 65px; }
 
 .pricing__discount-text {
