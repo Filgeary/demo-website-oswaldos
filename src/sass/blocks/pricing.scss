@@ -8,7 +8,17 @@
 .pricing__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 40px 0;
+}
+
+.pricing__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .pricing__list {
@@ -28,17 +38,53 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .pricing__text {
   width: 60%;
 
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
+}
+
+.pricing__sub-text {
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .pricing__value {
   width: 30%;
 
+  font-size: 20px;
+  text-align: center;
+}
+
+.pricing__discount {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+
+  border: 1px solid hsl(0, 0%, 30%);
+}
+
+.pricing__discount-icon {
+  width: 50%;
+
+  background: url(../../img/icon-clock.svg) no-repeat center;
+  background-size: 65px 65px;
+}
+
+.pricing__discount-text {
+  width: 50%;
+  margin: 5px 0;
+
+  font-size: 20px;
   text-align: center;
 }
 
@@ -87,7 +133,7 @@
     margin-right: 7%;
   }
 
-  .pricing__discount-text-wrapper {
+  .pricing__discount {
     width: 30%;
   }
 }
