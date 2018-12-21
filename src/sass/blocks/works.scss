@@ -15,7 +15,6 @@
 
 .works__title {
   margin: 0;
-  margin-bottom: 30px;
 
   font-size: 30px;
   line-height: 30px;
@@ -24,6 +23,7 @@
 }
 
 .works__item {
+  margin-top: 30px;
   margin-bottom: 20px;
 
   border: 1px solid $border-decor;
@@ -83,31 +83,45 @@
   .works__header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   .works__title {
     width: 60%;
+
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
   }
 
   .works__item {
     display: flex;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .works__image-wrapper {
     width: 42.2%;
-    margin-right: 7%;
+    margin-right: 7.8%;
   }
 
   .works__description-wrapper {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
 
     width: 50%;
-    padding-bottom: 30px;
-    padding-right: 30px;
+    padding: 40px 30px 35px 0;
+  }
+
+  .works__item-title {
+    margin-bottom: 30px;
+  }
+
+  .works__text {
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .works__services-list {
