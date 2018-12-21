@@ -1466,21 +1466,22 @@ img {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  width: 33%;
+  width: 33.3%;
   height: 100px;
   border: 1px solid #3f3f3f; }
   .social__item:nth-child(2), .social__item:nth-child(3) {
     border-left: none; }
 
+.social__item svg {
+  display: block; }
+
 .social__link {
   margin: auto;
-  padding: 25px 25%;
-  padding-top: 29px; }
+  padding: 25px 25%; }
 
 @media (min-width: 768px) {
   .social__link {
-    padding: 25px 30%;
-    padding-top: 29px; } }
+    padding: 25px 30%; } }
 
 @media (min-width: 1200px) {
   .social__title {
@@ -1500,8 +1501,7 @@ img {
     width: 25px;
     height: 25px; }
   .social__link {
-    padding: 15px;
-    padding-top: 19px; } }
+    padding: 15px; } }
 
 .copyright__text {
   display: block;
