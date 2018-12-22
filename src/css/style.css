@@ -1436,15 +1436,29 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
-    padding: 60px 0; }
+    padding: 70px 0; }
   .pricing__title {
     width: 100%; }
   .pricing__list {
     width: 60%;
     flex-grow: 1;
-    margin-right: 7%; }
+    margin-bottom: 0;
+    margin-right: 5%; }
   .pricing__discount {
-    width: 30%; } }
+    width: 30%;
+    flex-direction: column; }
+  .pricing__discount-icon {
+    width: 100%;
+    min-height: 160px;
+    margin-bottom: 30px;
+    background-size: 140px 140px; }
+  .pricing__discount-text {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px; }
+  .pricing__discount-text br {
+    display: block; } }
 
 .page-footer {
   width: auto;
