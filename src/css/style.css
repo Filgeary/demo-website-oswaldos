@@ -1325,13 +1325,17 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 20px; }
+  width: 100%; }
   .pricing__list tr:last-child {
     margin-bottom: 0; }
 
+.pricing__list td {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 .pricing__text {
   width: 60%;
+  flex-grow: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center; }
@@ -1357,6 +1361,7 @@ img {
   background-size: 65px 65px; }
 
 .pricing__discount-text {
+  flex-grow: 1;
   width: 50%;
   margin: 5px 0;
   font-size: 20px;
@@ -1371,13 +1376,45 @@ img {
     width: 83.3%;
     max-width: 1200px;
     padding: 40px 0; }
+  .pricing__title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left; }
+  .pricing__list tr {
+    border: 1px solid #4d4d4d; }
+    .pricing__list tr:not(:last-child) {
+      border-bottom: none; }
+  .pricing__list td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 1px solid #4d4d4d; }
+    .pricing__list td:last-child {
+      border-right: none; }
   .pricing__order-number {
     display: block;
     width: 10%;
-    text-align: center; }
+    font-size: 20px;
+    text-align: center;
+    color: #737373; }
+  .pricing__text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px; }
   .pricing__text br,
   .pricing__discount-text br {
-    display: none; } }
+    display: none; }
+  .pricing__value {
+    width: 25%; }
+  .pricing__discount-icon {
+    width: 40%;
+    background-size: 75px 75px; }
+  .pricing__discount-text {
+    width: 60%;
+    margin: 25px 0;
+    font-size: 30px;
+    line-height: 27px; } }
 
 @media (min-width: 1200px) {
   .pricing__wrapper {

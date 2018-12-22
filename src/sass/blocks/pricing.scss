@@ -38,15 +38,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.pricing__list td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pricing__text {
   width: 60%;
+  flex-grow: 1;
 
   font-size: 20px;
   font-weight: bold;
@@ -81,6 +86,7 @@
 }
 
 .pricing__discount-text {
+  flex-grow: 1;
   width: 50%;
   margin: 5px 0;
 
@@ -101,16 +107,70 @@
     padding: 40px 0;
   }
 
+  .pricing__title {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .pricing__list tr {
+    border: 1px solid hsl(0, 0%, 30%);
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .pricing__list td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-right: 1px solid hsl(0, 0%, 30%);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
   .pricing__order-number {
     display: block;
     width: 10%;
 
+    font-size: 20px;
     text-align: center;
+    color: hsl(0, 0%, 45%);
+  }
+
+  .pricing__text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .pricing__text br,
   .pricing__discount-text br {
     display: none;
+  }
+
+  .pricing__value {
+    width: 25%;
+  }
+
+  .pricing__discount-icon {
+    width: 40%;
+
+    background-size: 75px 75px;
+  }
+
+  .pricing__discount-text {
+    width: 60%;
+    margin: 25px 0;
+
+    font-size: 30px;
+    line-height: 27px;
   }
 }
 
