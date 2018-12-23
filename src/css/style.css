@@ -1563,7 +1563,7 @@ img {
 @media (min-width: 1200px) {
   .social__title {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center; }
   .social__item {
     flex-grow: 0;
