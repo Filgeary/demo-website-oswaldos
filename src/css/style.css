@@ -1306,7 +1306,10 @@ img {
       padding-left: 0;
       padding-top: 100px; }
   .works__item-title {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .works__item--main .works__services-item {
+    width: 33%;
+    margin-top: 0; } }
 
 .pricing {
   width: auto;
