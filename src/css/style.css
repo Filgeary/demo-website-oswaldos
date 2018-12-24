@@ -1086,10 +1086,6 @@ img {
   margin-top: 15px;
   margin-bottom: 29px; }
 
-.reviews__toggles {
-  margin: 0;
-  text-align: center; }
-
 @media (min-width: 768px) {
   .reviews__wrapper {
     display: flex;
@@ -1129,8 +1125,6 @@ img {
   .reviews__toggles {
     position: relative;
     top: -15px;
-    min-width: 150px;
-    margin: 0 auto;
     background-color: #f8f5f2; }
   .reviews__prev,
   .reviews__next {
@@ -1169,7 +1163,7 @@ img {
     border: 1px solid #e5ddd5; }
   .reviews__toggles {
     position: static;
-    margin-top: 40px; } }
+    margin-top: 40px !important; } }
 
 .works {
   width: auto;
@@ -1628,6 +1622,11 @@ img {
     width: 25%; }
   .contacts__phone:hover, .contacts__phone:focus, .contacts__phone:active {
     color: #4169e1; } }
+
+.slider__toggles {
+  margin: 0 auto;
+  min-width: 150px;
+  text-align: center; }
 
 .slider__toggle {
   margin-right: 25px;

@@ -66,12 +66,6 @@
   margin-bottom: 29px;
 }
 
-.reviews__toggles {
-  margin: 0;
-
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
     display: flex;
@@ -128,8 +122,6 @@
   .reviews__toggles {
     position: relative;
     top: -15px;
-    min-width: 150px;
-    margin: 0 auto;
 
     background-color: $bg-lightgrey;
   }
@@ -193,7 +185,7 @@
   .reviews__toggles {
     position: static;
 
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
 }
 
