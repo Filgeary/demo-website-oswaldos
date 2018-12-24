@@ -1681,6 +1681,10 @@ img {
 .page-works__main {
   background-color: #f8f5f2; }
 
+.page-works__promo {
+  color: #404040;
+  background: #e6dcd1; }
+
 @media (min-width: 768px) {
   .page-works__header {
     height: 300px; } }

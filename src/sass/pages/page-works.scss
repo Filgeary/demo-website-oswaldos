@@ -2,6 +2,12 @@
   background-color: $bg-lightgrey;
 }
 
+.page-works__promo {
+  color: $font-dark;
+
+  background: darken($bg-lightgrey, 10%);
+}
+
 @media(min-width: $tablet-width) {
   .page-works__header {
     height: 300px;
