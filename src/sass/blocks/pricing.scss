@@ -3,12 +3,14 @@
   margin: 0 auto;
 
   background-color: lighten($bg-darkgrey, 5%);
+
+  clip-path: polygon(50% 35px, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .pricing__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 80px 0 40px 0;
 }
 
 .pricing__title {
@@ -101,10 +103,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .pricing {
+    clip-path: polygon(50% 40px, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
   .pricing__wrapper {
     width: 83.3%;
     max-width: 1200px;
-    padding: 50px 0;
+    padding: 90px 0 50px 0;
   }
 
   .pricing__title {
@@ -175,12 +181,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .pricing {
+    clip-path: polygon(50% 65px, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
   .pricing__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
-    padding: 70px 0;
+    padding: 120px 0 70px 0;
   }
 
   .pricing__title {
