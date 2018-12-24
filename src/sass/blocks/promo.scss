@@ -1,0 +1,44 @@
+.promo {
+  width: auto;
+  margin: 0 auto;
+
+  background-color: lighten($bg-darkgrey, 10%);
+}
+
+.promo__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.promo__text {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 83.3%;
+    max-width: 1200px;
+    padding: 40px;
+  }
+
+  .promo__text {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 80%;
+  }
+
+  .promo__text {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}

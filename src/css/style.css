@@ -923,7 +923,7 @@ img {
   width: 87.5%;
   margin: 0 auto;
   padding-top: 65px;
-  padding-bottom: 30px; }
+  padding-bottom: 50px; }
 
 .news__title {
   font-size: 30px;
@@ -1033,6 +1033,38 @@ img {
       margin-right: 0; }
   .news__title {
     margin-left: 70px; } }
+
+.promo {
+  width: auto;
+  margin: 0 auto;
+  background-color: #434343; }
+
+.promo__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 30px; }
+
+.promo__text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .promo__wrapper {
+    width: 83.3%;
+    max-width: 1200px;
+    padding: 40px; }
+  .promo__text {
+    font-size: 26px;
+    line-height: 38px; } }
+
+@media (min-width: 1200px) {
+  .promo__wrapper {
+    width: 80%; }
+  .promo__text {
+    font-size: 30px;
+    line-height: 44px; } }
 
 .reviews {
   width: auto;
