@@ -1040,31 +1040,40 @@ img {
   background-color: #434343; }
 
 .promo__wrapper {
+  display: flex;
+  justify-content: space-between;
   width: 87.5%;
   margin: 0 auto;
-  padding: 25px; }
+  padding: 20px 0; }
+
+.promo svg {
+  width: 25%;
+  margin-right: 5%; }
 
 .promo__text {
+  flex-grow: 1;
+  width: 70%;
   margin: 0;
   font-size: 24px;
-  line-height: 35px;
-  text-align: center; }
+  line-height: 35px; }
 
 @media (min-width: 768px) {
   .promo__wrapper {
+    align-items: center;
     width: 83.3%;
-    max-width: 1200px;
-    padding: 30px; }
+    max-width: 1200px; }
+  .promo svg {
+    width: 15%; }
   .promo__text {
     font-size: 26px;
     line-height: 38px; } }
 
 @media (min-width: 1200px) {
   .promo__wrapper {
-    width: 80%; }
-  .promo__text {
-    font-size: 30px;
-    line-height: 44px; } }
+    width: 80%;
+    padding: 20px 5%; }
+  .promo svg {
+    width: 10%; } }
 
 .reviews {
   width: auto;
