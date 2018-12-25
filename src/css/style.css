@@ -1224,10 +1224,28 @@ img {
     margin-bottom: 0; }
 
 .works__image-wrapper {
+  position: relative;
   width: 100%;
   height: auto;
   object-fit: cover;
   overflow: hidden; }
+  .works__image-wrapper--main::before {
+    position: absolute;
+    content: "The Super Project";
+    bottom: 30px;
+    left: 0;
+    z-index: 2;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f7f4f1;
+    background-color: #826550;
+    clip-path: polygon(100% 0, 93% 50%, 100% 100%, 0 100%, 0 0); }
 
 .works__image {
   display: block;
