@@ -1336,6 +1336,7 @@ img {
   .works__header {
     width: 100%; }
   .works__item {
+    position: relative;
     flex-grow: 1;
     flex-direction: column;
     width: 30%;
@@ -1346,6 +1347,23 @@ img {
       width: 100%;
       margin-top: 60px;
       margin-bottom: 45px; }
+      .works__item--main::before {
+        position: absolute;
+        content: "The Super Project";
+        top: 25px;
+        right: 0;
+        z-index: 2;
+        width: 200px;
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f7f4f1;
+        background-color: #826550;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 7% 50%); }
     .works__item--main, .works__item:last-child {
       margin-right: 0; }
   .works__image-wrapper {
@@ -1354,6 +1372,8 @@ img {
     .works__image-wrapper--main {
       width: 50%;
       margin-right: 5%; }
+      .works__image-wrapper--main::before {
+        display: none; }
   .works__description-wrapper {
     flex-grow: 1;
     width: auto;
@@ -1361,7 +1381,7 @@ img {
     .works__description-wrapper--main {
       width: 45%;
       padding-left: 0;
-      padding-top: 100px; }
+      padding-top: 120px; }
   .works__item-title {
     font-size: 26px; }
   .works__item--main .works__services-item {
