@@ -1252,11 +1252,23 @@ img {
 .works__services-item {
   flex-grow: 1;
   width: 45%;
-  padding-left: 40px;
+  margin-right: 5%;
+  padding-left: 35px;
   font-size: 16px;
   text-transform: uppercase; }
   .works__services-item:nth-child(3) {
     margin-top: 15px; }
+  .works__services-item:last-child {
+    margin-right: 0; }
+  .works__services-item--service1 {
+    background: url(../img/icon-settings.svg) no-repeat 0 1px;
+    background-size: 24px 24px; }
+  .works__services-item--service2 {
+    background: url(../img/icon-photo-camera.svg) no-repeat 0 1px;
+    background-size: 24px 24px; }
+  .works__services-item--service3 {
+    background: url(../img/icon-networking.svg) no-repeat 0 1px;
+    background-size: 24px 24px; }
 
 @media (min-width: 768px) {
   .works__wrapper {
@@ -1334,7 +1346,7 @@ img {
   .works__item-title {
     font-size: 26px; }
   .works__item--main .works__services-item {
-    width: 33%;
+    width: 30%;
     margin-top: 0; } }
 
 .pricing {

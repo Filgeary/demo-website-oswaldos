@@ -71,13 +71,33 @@
 .works__services-item {
   flex-grow: 1;
   width: 45%;
-  padding-left: 40px;
+  margin-right: 5%;
+  padding-left: 35px;
 
   font-size: 16px;
   text-transform: uppercase;
 
   &:nth-child(3) {
     margin-top: 15px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--service1 {
+    background: url(../img/icon-settings.svg) no-repeat 0 1px;
+    background-size: 24px 24px;
+  }
+
+  &--service2 {
+    background: url(../img/icon-photo-camera.svg) no-repeat 0 1px;
+    background-size: 24px 24px;
+  }
+
+  &--service3 {
+    background: url(../img/icon-networking.svg) no-repeat 0 1px;
+    background-size: 24px 24px;
   }
 }
 
@@ -200,7 +220,7 @@
   }
 
   .works__item--main .works__services-item {
-    width: 33%;
+    width: 30%;
     margin-top: 0;
   }
 }
