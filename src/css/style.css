@@ -1042,7 +1042,7 @@ img {
 .promo__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding: 30px; }
+  padding: 25px; }
 
 .promo__text {
   margin: 0;
@@ -1054,7 +1054,7 @@ img {
   .promo__wrapper {
     width: 83.3%;
     max-width: 1200px;
-    padding: 40px; }
+    padding: 30px; }
   .promo__text {
     font-size: 26px;
     line-height: 38px; } }
