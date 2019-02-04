@@ -1237,8 +1237,7 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  overflow: hidden;
-  background-color: #ece4df; }
+  overflow: hidden; }
   .works__image-wrapper--main::before {
     position: absolute;
     content: "The Super Project";
@@ -1260,9 +1259,11 @@ img {
 .works__image {
   display: block;
   width: 100%;
-  max-width: 370px;
-  height: auto;
-  margin: 0 auto; }
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 20%; }
+  .works__image--main {
+    height: 480px; }
 
 .works__description-wrapper {
   padding: 25px 20px; }
@@ -1324,7 +1325,11 @@ img {
     width: 42.2%;
     margin-right: 7.8%; }
   .works__image {
-    max-width: none; }
+    height: auto;
+    max-height: 320px;
+    object-position: 50% 10%; }
+    .works__image--main {
+      max-height: 550px; }
   .works__description-wrapper {
     display: flex;
     flex-grow: 1;

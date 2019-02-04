@@ -45,8 +45,6 @@
   object-fit: cover;
   overflow: hidden;
 
-  background-color: hsl(25, 24%, 90%);
-
   &--main::before {
     position: absolute;
     content: "The Super Project";
@@ -73,9 +71,13 @@
 .works__image {
   display: block;
   width: 100%;
-  max-width: 370px;
-  height: auto;
-  margin: 0 auto;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 20%;
+
+  &--main {
+    height: 480px;
+  }
 }
 
 .works__description-wrapper {
@@ -166,7 +168,13 @@
   }
 
   .works__image {
-    max-width: none;
+    height: auto;
+    max-height: 320px;
+    object-position: 50% 10%;
+
+    &--main {
+      max-height: 550px;
+    }
   }
 
   .works__description-wrapper {
