@@ -1603,7 +1603,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e6dcd1; }
 
 .fieldset-filter__title {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-size: 20px;
   text-align: center;
   text-transform: uppercase; }
@@ -1617,24 +1617,28 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     align-content: center;
     padding: 0 10px;
-    padding-top: 70px; }
+    padding-top: 50px; }
 
-.fieldset-filter__option {
-  margin-bottom: 20px; }
-  .fieldset-filter__option--radio {
-    width: 30%;
-    margin-right: 5%;
-    margin-bottom: 80px; }
-    .fieldset-filter__option--radio:first-child {
-      margin-bottom: 160px; }
-    .fieldset-filter__option--radio:nth-child(3n) {
-      margin-right: 0; }
+.fieldset-filter__option--radio {
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 80px; }
+  .fieldset-filter__option--radio:first-child {
+    margin-bottom: 160px; }
+  .fieldset-filter__option--radio:nth-child(3n) {
+    margin-right: 0; }
+
+.fieldset-filter__option--checkbox {
+  margin-bottom: 35px; }
 
 .fieldset-filter__label {
   position: relative;
-  padding-bottom: 100px;
   cursor: pointer;
   user-select: none; }
+  .fieldset-filter__label--radio {
+    padding-bottom: 100px; }
+  .fieldset-filter__label--checkbox {
+    padding-left: 70px; }
   .fieldset-filter__label--service1 {
     background: url(../img/icon-networking.svg) no-repeat center;
     background-size: 50px 50px; }
@@ -1666,11 +1670,31 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: "";
   top: -49px;
-  right: 19px;
+  right: 20px;
   width: 20px;
   height: 20px;
   background-color: #785c40;
   border-radius: 50%; }
+
+.fieldset-filter__input--checkbox + .fieldset-filter__label::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e6dcd1; }
+
+.fieldset-filter__input--checkbox:checked + .fieldset-filter__label::after {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: 7px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon-mark.svg) no-repeat center;
+  background-size: 27px 27px; }
 
 .page-footer {
   width: auto;

@@ -1,5 +1,5 @@
 .fieldset-filter__title {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 
   font-size: 20px;
   text-align: center;
@@ -14,12 +14,11 @@
     flex-wrap: wrap;
     align-content: center;
     padding: 0 10px;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 }
 
 .fieldset-filter__option {
-  margin-bottom: 20px;
 
   &--radio {
     width: 30%;
@@ -34,15 +33,25 @@
       margin-right: 0;
     }
   }
+
+  &--checkbox {
+    margin-bottom: 35px;
+  }
 }
 
 .fieldset-filter__label {
   position: relative;
 
-  padding-bottom: 100px;
-
   cursor: pointer;
   user-select: none;
+
+  &--radio {
+    padding-bottom: 100px;
+  }
+
+  &--checkbox {
+    padding-left: 70px;
+  }
 
   &--service1 {
     background: url(../img/icon-networking.svg) no-repeat center;
@@ -88,13 +97,39 @@
   @include before-after;
 
   top: -49px;
-  right: 19px;
+  right: 20px;
 
   width: 20px;
   height: 20px;
 
   background-color: darken($bg-lightgrey, 60%);
   border-radius: 50%;
+}
+
+.fieldset-filter__input--checkbox + .fieldset-filter__label::before {
+  @include before-after;
+
+  top: -9px;
+  left: 0;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #fff;
+  border: 1px solid darken($bg-lightgrey, 10%);
+}
+
+.fieldset-filter__input--checkbox:checked + .fieldset-filter__label::after {
+  @include before-after;
+
+  top: -3px;
+  left: 7px;
+
+  width: 30px;
+  height: 30px;
+
+  background: url(../img/icon-mark.svg) no-repeat center;
+  background-size: 27px 27px;
 }
 
 // mockup
