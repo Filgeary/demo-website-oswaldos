@@ -1,0 +1,22 @@
+.page-form__main {
+  color: $font-dark;
+  background-color: $bg-lightgrey;
+}
+
+.page-works__promo {
+  color: $font-dark;
+
+  background: darken($bg-lightgrey, 10%);
+}
+
+@media(min-width: $tablet-width) {
+  .page-form__header {
+    height: 300px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .page-form__header {
+    height: 400px;
+  }
+}

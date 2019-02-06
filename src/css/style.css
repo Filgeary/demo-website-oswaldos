@@ -1762,3 +1762,19 @@ img {
 @media (min-width: 1200px) {
   .page-works__header {
     height: 400px; } }
+
+.page-form__main {
+  color: #404040;
+  background-color: #f8f5f2; }
+
+.page-works__promo {
+  color: #404040;
+  background: #e6dcd1; }
+
+@media (min-width: 768px) {
+  .page-form__header {
+    height: 300px; } }
+
+@media (min-width: 1200px) {
+  .page-form__header {
+    height: 400px; } }
