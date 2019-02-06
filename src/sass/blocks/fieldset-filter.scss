@@ -79,6 +79,11 @@
   }
 }
 
+.fieldset-filter__input:hover + .fieldset-filter__label,
+.fieldset-filter__input:focus + .fieldset-filter__label {
+  color: $link-color;
+}
+
 .fieldset-filter__input--radio + .fieldset-filter__label::before {
   @include before-after;
 

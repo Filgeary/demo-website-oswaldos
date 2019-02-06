@@ -1655,6 +1655,10 @@ input[type="radio"].visually-hidden {
     background: url(../img/icon-email.svg) no-repeat center;
     background-size: 50px 50px; }
 
+.fieldset-filter__input:hover + .fieldset-filter__label,
+.fieldset-filter__input:focus + .fieldset-filter__label {
+  color: #4169e1; }
+
 .fieldset-filter__input--radio + .fieldset-filter__label::before {
   position: absolute;
   content: "";
@@ -1842,7 +1846,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   background: #4169e1; }
   .btn__primary:hover, .btn__primary:focus, .btn__primary:active {
-    background-color: #214cce; }
+    background-color: #2351dc; }
 
 .contacts__phone {
   color: #99afef; }
