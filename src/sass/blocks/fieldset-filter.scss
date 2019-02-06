@@ -1,0 +1,100 @@
+.fieldset-filter__title {
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fieldset-filter__list {
+  @include reset-list;
+
+  &--radio {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 20px;
+    padding-top: 70px;
+  }
+}
+
+.fieldset-filter__option {
+  margin-bottom: 20px;
+
+  &--radio {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 80px;
+
+    &:first-child {
+      margin-bottom: 160px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.fieldset-filter__label {
+  position: relative;
+
+  padding-bottom: 100px;
+
+  cursor: pointer;
+  user-select: none;
+
+  &--service1 {
+    background: url(../img/icon-networking.svg) no-repeat center;
+    background-size: 50px 50px;
+  }
+
+  &--service2 {
+    background: url(../img/icon-photo-camera.svg) no-repeat center;
+    background-size: 50px 50px;
+  }
+
+  &--service3 {
+    background: url(../img/icon-settings.svg) no-repeat center;
+    background-size: 50px 50px;
+  }
+
+  &--service4 {
+    background: url(../img/icon-shopping-cart.svg) no-repeat center;
+    background-size: 50px 50px;
+  }
+
+  &--service5 {
+    background: url(../img/icon-email.svg) no-repeat center;
+    background-size: 50px 50px;
+  }
+}
+
+.fieldset-filter__input--radio + .fieldset-filter__label::before {
+  @include before-after;
+
+  top: -60px;
+  right: 12%;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #fff;
+  border: 1px solid darken($bg-lightgrey, 10%);
+  border-radius: 50%;
+}
+
+.fieldset-filter__input--radio:checked + .fieldset-filter__label::after {
+  @include before-after;
+
+  top: -49px;
+  right: 30%;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: darken($bg-lightgrey, 60%);
+  border-radius: 50%;
+}
+
+// mockup

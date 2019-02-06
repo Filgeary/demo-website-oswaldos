@@ -2,6 +2,10 @@
   margin-bottom: 10px;
 
   font-style: italic;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .fieldset-person__item input,

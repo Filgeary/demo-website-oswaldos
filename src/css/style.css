@@ -338,7 +338,9 @@ img {
   max-width: 100%;
   height: auto; }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1584,12 +1586,14 @@ img {
 .appointment__fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: none; }
 
 .fieldset-person__item {
   margin-bottom: 10px;
   font-style: italic; }
+  .fieldset-person__item:last-child {
+    margin-bottom: 0; }
 
 .fieldset-person__item input,
 .fieldset-person__item textarea {
@@ -1597,6 +1601,76 @@ img {
   padding: 10px 20px;
   font: inherit;
   border: 1px solid #e6dcd1; }
+
+.fieldset-filter__title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.fieldset-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .fieldset-filter__list--radio {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 20px;
+    padding-top: 70px; }
+
+.fieldset-filter__option {
+  margin-bottom: 20px; }
+  .fieldset-filter__option--radio {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 80px; }
+    .fieldset-filter__option--radio:first-child {
+      margin-bottom: 160px; }
+    .fieldset-filter__option--radio:nth-child(3n) {
+      margin-right: 0; }
+
+.fieldset-filter__label {
+  position: relative;
+  padding-bottom: 100px;
+  cursor: pointer;
+  user-select: none; }
+  .fieldset-filter__label--service1 {
+    background: url(../img/icon-networking.svg) no-repeat center;
+    background-size: 50px 50px; }
+  .fieldset-filter__label--service2 {
+    background: url(../img/icon-photo-camera.svg) no-repeat center;
+    background-size: 50px 50px; }
+  .fieldset-filter__label--service3 {
+    background: url(../img/icon-settings.svg) no-repeat center;
+    background-size: 50px 50px; }
+  .fieldset-filter__label--service4 {
+    background: url(../img/icon-shopping-cart.svg) no-repeat center;
+    background-size: 50px 50px; }
+  .fieldset-filter__label--service5 {
+    background: url(../img/icon-email.svg) no-repeat center;
+    background-size: 50px 50px; }
+
+.fieldset-filter__input--radio + .fieldset-filter__label::before {
+  position: absolute;
+  content: "";
+  top: -60px;
+  right: 12%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e6dcd1;
+  border-radius: 50%; }
+
+.fieldset-filter__input--radio:checked + .fieldset-filter__label::after {
+  position: absolute;
+  content: "";
+  top: -49px;
+  right: 30%;
+  width: 20px;
+  height: 20px;
+  background-color: #785c40;
+  border-radius: 50%; }
 
 .page-footer {
   width: auto;
