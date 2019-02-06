@@ -1587,6 +1587,17 @@ img {
   margin-bottom: 20px;
   border: none; }
 
+.fieldset-person__item {
+  margin-bottom: 10px;
+  font-style: italic; }
+
+.fieldset-person__item input,
+.fieldset-person__item textarea {
+  width: 100%;
+  padding: 10px 20px;
+  font: inherit;
+  border: 1px solid #e6dcd1; }
+
 .page-footer {
   width: auto;
   margin: 0 auto; }
