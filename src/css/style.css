@@ -1615,14 +1615,13 @@ input[type="radio"].visually-hidden {
   .fieldset-filter__list--radio {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    padding: 0 10px;
     padding-top: 50px; }
 
 .fieldset-filter__option--radio {
   width: 30%;
   margin-right: 5%;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  text-align: center; }
   .fieldset-filter__option--radio:first-child {
     margin-bottom: 160px; }
   .fieldset-filter__option--radio:nth-child(3n) {

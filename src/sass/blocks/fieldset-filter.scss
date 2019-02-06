@@ -12,8 +12,6 @@
   &--radio {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    padding: 0 10px;
     padding-top: 50px;
   }
 }
@@ -24,6 +22,8 @@
     width: 30%;
     margin-right: 5%;
     margin-bottom: 80px;
+
+    text-align: center;
 
     &:first-child {
       margin-bottom: 160px;
