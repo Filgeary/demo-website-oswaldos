@@ -1831,12 +1831,18 @@ input[type="radio"].visually-hidden {
   border: 1px solid #99afef;
   cursor: pointer; }
   .btn:hover, .btn:focus, .btn:active {
-    color: #f7f4f1;
+    color: #fff;
     background-color: #4169e1; }
   .btn:disabled {
     cursor: default;
     opacity: 0.5;
     background-color: #ccc; }
+
+.btn__primary {
+  color: #fff;
+  background: #4169e1; }
+  .btn__primary:hover, .btn__primary:focus, .btn__primary:active {
+    background-color: #214cce; }
 
 .contacts__phone {
   color: #99afef; }

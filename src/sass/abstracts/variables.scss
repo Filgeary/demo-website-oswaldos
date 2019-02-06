@@ -26,10 +26,11 @@ $link-hover-color: #1f49c7;
 
 // buttons
 $btn-color: #4169e1;
-$btn-hover-color: $font-light;
-
+$btn-hover-color: #fff;
 $btn-bg-hover-color: $btn-color;
-
 $btn-border-color: lighten($btn-color, 20%);
-
 $btn-disabled: #ccc;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: #4169e1;
+$btn-primary-bg-hover: darken($btn-primary-bg, 10%);
