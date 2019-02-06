@@ -1564,6 +1564,29 @@ img {
   .pricing__discount-text br {
     display: block; } }
 
+.appointment {
+  width: auto; }
+
+.appointment__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+.appointment__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.appointment__fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  border: none; }
+
 .page-footer {
   width: auto;
   margin: 0 auto; }
