@@ -1616,7 +1616,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    padding: 0 20px;
+    padding: 0 10px;
     padding-top: 70px; }
 
 .fieldset-filter__option {
