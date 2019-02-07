@@ -1585,7 +1585,7 @@ input[type="radio"].visually-hidden {
 
 .appointment__fieldset {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
   border: none; }
 
@@ -1602,9 +1602,13 @@ input[type="radio"].visually-hidden {
   font: inherit;
   border: 1px solid #e6dcd1; }
 
+.fieldset-filter--checkbox {
+  width: 75%; }
+
 .fieldset-filter__title {
   margin-bottom: 40px;
   font-size: 20px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase; }
 
@@ -1615,19 +1619,20 @@ input[type="radio"].visually-hidden {
   .fieldset-filter__list--radio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 50px; }
 
-.fieldset-filter__option--radio {
+.fieldset-filter__list-item--radio {
   width: 30%;
   margin-right: 5%;
   margin-bottom: 80px;
   text-align: center; }
-  .fieldset-filter__option--radio:first-child {
+  .fieldset-filter__list-item--radio:first-child {
     margin-bottom: 160px; }
-  .fieldset-filter__option--radio:nth-child(3n) {
+  .fieldset-filter__list-item--radio:nth-child(3n) {
     margin-right: 0; }
 
-.fieldset-filter__option--checkbox {
+.fieldset-filter__list-item--checkbox {
   margin-bottom: 35px; }
 
 .fieldset-filter__label {
@@ -1636,8 +1641,6 @@ input[type="radio"].visually-hidden {
   user-select: none; }
   .fieldset-filter__label--radio {
     padding-bottom: 100px; }
-  .fieldset-filter__label--checkbox {
-    padding-left: 70px; }
   .fieldset-filter__label--service1 {
     background: url(../img/icon-networking.svg) no-repeat center;
     background-size: 50px 50px; }
@@ -1653,12 +1656,14 @@ input[type="radio"].visually-hidden {
   .fieldset-filter__label--service5 {
     background: url(../img/icon-email.svg) no-repeat center;
     background-size: 50px 50px; }
+  .fieldset-filter__label--checkbox {
+    padding-left: 70px; }
 
 .fieldset-filter__input:hover + .fieldset-filter__label,
 .fieldset-filter__input:focus + .fieldset-filter__label {
   color: #4169e1; }
 
-.fieldset-filter__input--radio + .fieldset-filter__label::before {
+.fieldset-filter__input--radio + .fieldset-filter__label--radio::before {
   position: absolute;
   content: "";
   top: -60px;
@@ -1669,7 +1674,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e6dcd1;
   border-radius: 50%; }
 
-.fieldset-filter__input--radio:checked + .fieldset-filter__label::after {
+.fieldset-filter__input--radio:checked + .fieldset-filter__label--radio::after {
   position: absolute;
   content: "";
   top: -49px;
@@ -1679,7 +1684,7 @@ input[type="radio"].visually-hidden {
   background-color: #785c40;
   border-radius: 50%; }
 
-.fieldset-filter__input--checkbox + .fieldset-filter__label::before {
+.fieldset-filter__input--checkbox + .fieldset-filter__label--checkbox::before {
   position: absolute;
   content: "";
   top: -9px;
@@ -1689,7 +1694,7 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
   border: 1px solid #e6dcd1; }
 
-.fieldset-filter__input--checkbox:checked + .fieldset-filter__label::after {
+.fieldset-filter__input--checkbox:checked + .fieldset-filter__label--checkbox::after {
   position: absolute;
   content: "";
   top: -3px;
