@@ -1,3 +1,7 @@
+.fieldset-person {
+  // style
+}
+
 .fieldset-person__item {
   margin-bottom: 10px;
 
@@ -8,8 +12,12 @@
   }
 }
 
-.fieldset-person__item input,
-.fieldset-person__item textarea {
+.fieldset-person__label {
+  // style
+}
+
+.fieldset-person__input,
+.fieldset-person__textarea {
   width: 100%;
   padding: 10px 20px;
 

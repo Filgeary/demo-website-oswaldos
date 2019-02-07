@@ -1595,8 +1595,8 @@ input[type="radio"].visually-hidden {
   .fieldset-person__item:last-child {
     margin-bottom: 0; }
 
-.fieldset-person__item input,
-.fieldset-person__item textarea {
+.fieldset-person__input,
+.fieldset-person__textarea {
   width: 100%;
   padding: 10px 20px;
   font: inherit;
