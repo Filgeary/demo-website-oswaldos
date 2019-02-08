@@ -1577,7 +1577,6 @@ input[type="radio"].visually-hidden {
 
 .appointment__title {
   margin: 0;
-  margin-bottom: 30px;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
@@ -1588,6 +1587,14 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 30px;
   border: none; }
+  .appointment__fieldset:first-child {
+    margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .appointment__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
 
 .fieldset-person__wrapper--name-last-name, .fieldset-person__wrapper--tel-email {
   margin-bottom: 30px; }
@@ -1869,13 +1876,15 @@ input[type="radio"].visually-hidden {
   .reviews__write,
   .reviews__prev,
   .reviews__next,
-  .works__to-home {
+  .works__to-home,
+  .appointment__to-home {
     display: none; } }
 
 @media (min-width: 768px) {
   .news__to-all,
   .reviews__write,
-  .works__to-home {
+  .works__to-home,
+  .appointment__to-home {
     width: 25%; }
   .contacts__phone:hover, .contacts__phone:focus, .contacts__phone:active {
     color: #4169e1; } }

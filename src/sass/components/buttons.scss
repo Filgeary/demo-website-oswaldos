@@ -62,7 +62,8 @@
   .reviews__write,
   .reviews__prev,
   .reviews__next,
-  .works__to-home {
+  .works__to-home,
+  .appointment__to-home {
     display: none;
   }
 }
@@ -71,7 +72,8 @@
 
   .news__to-all,
   .reviews__write,
-  .works__to-home {
+  .works__to-home,
+  .appointment__to-home {
     width: 25%;
   }
 
