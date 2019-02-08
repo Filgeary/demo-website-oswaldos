@@ -39,6 +39,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+
+  .btn__primary {
+
+    &--appointment {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+}
+
 // Custom buttons
 // -------------------------------------------------
 

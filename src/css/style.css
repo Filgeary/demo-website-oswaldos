@@ -1585,16 +1585,31 @@ input[type="radio"].visually-hidden {
 .appointment__fieldset {
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   border: none; }
   .appointment__fieldset:first-child {
     margin-top: 30px; }
 
 @media (min-width: 768px) {
+  .appointment__wrapper {
+    width: 83.3%;
+    max-width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 70px; }
   .appointment__header {
     display: flex;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center; }
+  .appointment__title {
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left; }
+  .appointment__fieldset {
+    margin-bottom: 70px;
+    font-size: 24px;
+    line-height: 30px; }
+    .appointment__fieldset:first-child {
+      margin-top: 50px; } }
 
 .fieldset-person__wrapper--name-last-name, .fieldset-person__wrapper--tel-email {
   margin-bottom: 30px; }
@@ -1613,8 +1628,26 @@ input[type="radio"].visually-hidden {
   font: inherit;
   border: 1px solid #e6dcd1; }
 
+@media (min-width: 768px) {
+  .fieldset-person__wrapper--name-last-name {
+    margin-bottom: 0; }
+  .fieldset-person__wrapper--tel-email {
+    margin-bottom: 30px; }
+  .fieldset-person__wrapper--name-last-name {
+    display: flex; }
+  .fieldset-person__item {
+    margin-bottom: 30px; }
+    .fieldset-person__item--name, .fieldset-person__item--last-name {
+      width: 50%; }
+  .fieldset-person__input,
+  .fieldset-person__textarea {
+    padding: 15px 30px; }
+  .fieldset-person__input--name {
+    border-right: none; } }
+
 .fieldset-filter--checkbox {
-  width: 75%; }
+  width: 75%;
+  margin-bottom: 50px; }
 
 .fieldset-filter__title {
   margin-bottom: 40px;
@@ -1645,6 +1678,8 @@ input[type="radio"].visually-hidden {
 
 .fieldset-filter__list-item--checkbox {
   margin-bottom: 35px; }
+  .fieldset-filter__list-item--checkbox:last-child {
+    margin-bottom: 0; }
 
 .fieldset-filter__label {
   position: relative;
@@ -1674,7 +1709,7 @@ input[type="radio"].visually-hidden {
 .fieldset-filter__input:focus + .fieldset-filter__label {
   color: #4169e1; }
 
-.fieldset-filter__input--radio + .fieldset-filter__label--radio::before {
+.fieldset-filter__label--radio::before {
   position: absolute;
   content: "";
   top: -60px;
@@ -1695,7 +1730,7 @@ input[type="radio"].visually-hidden {
   background-color: #785c40;
   border-radius: 50%; }
 
-.fieldset-filter__input--checkbox + .fieldset-filter__label--checkbox::before {
+.fieldset-filter__label--checkbox::before {
   position: absolute;
   content: "";
   top: -9px;
@@ -1714,6 +1749,51 @@ input[type="radio"].visually-hidden {
   height: 30px;
   background: url(../img/icon-mark.svg) no-repeat center;
   background-size: 27px 27px; }
+
+@media (min-width: 768px) {
+  .fieldset-filter {
+    border-top: 1px solid #ddcfc0; }
+    .fieldset-filter--checkbox {
+      width: 100%;
+      margin-bottom: 90px; }
+  .fieldset-filter__title {
+    margin-bottom: 60px;
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 30px; }
+  .fieldset-filter__list--radio {
+    justify-content: flex-start; }
+  .fieldset-filter__list--checkbox {
+    display: flex;
+    flex-wrap: wrap; }
+  .fieldset-filter__list-item--radio {
+    flex-grow: 1;
+    width: 15%;
+    margin-right: 3%;
+    margin-bottom: 80px;
+    text-align: center; }
+    .fieldset-filter__list-item--radio:first-child {
+      margin-bottom: 0; }
+    .fieldset-filter__list-item--radio:nth-child(3n) {
+      margin-right: 3%; }
+    .fieldset-filter__list-item--radio:nth-child(5n) {
+      margin-right: 0; }
+  .fieldset-filter__list-item--checkbox {
+    width: 50%;
+    flex-grow: 1;
+    margin-bottom: 35px; }
+  .fieldset-filter__label--radio {
+    padding-bottom: 120px; }
+  .fieldset-filter__label--checkbox {
+    padding-left: 70px; }
+  .fieldset-filter__label--radio::before {
+    right: 16px; }
+  .fieldset-filter__input--radio:checked + .fieldset-filter__label--radio::after {
+    right: 26px; }
+  .fieldset-filter__label--checkbox::before {
+    top: -5px; }
+  .fieldset-filter__input--checkbox:checked + .fieldset-filter__label--checkbox::after {
+    top: 1px; } }
 
 .page-footer {
   width: auto;
@@ -1862,6 +1942,11 @@ input[type="radio"].visually-hidden {
   background: #4169e1; }
   .btn__primary:hover, .btn__primary:focus, .btn__primary:active {
     background-color: #2351dc; }
+
+@media (min-width: 768px) {
+  .btn__primary--appointment {
+    font-size: 24px;
+    line-height: 35px; } }
 
 .contacts__phone {
   color: #99afef; }

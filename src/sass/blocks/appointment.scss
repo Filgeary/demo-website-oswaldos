@@ -21,7 +21,7 @@
 .appointment__fieldset {
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   border: none;
 
@@ -31,11 +31,37 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .appointment__wrapper {
+    width: 83.3%;
+    max-width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
   .appointment__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  .appointment__title {
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .appointment__fieldset {
+    margin-bottom: 70px;
+
+    font-size: 24px;
+    line-height: 30px;
+
+    &:first-child {
+      margin-top: 50px;
+    }
+  }
+
 }
 
 // mockup
