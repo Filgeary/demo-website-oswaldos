@@ -2,7 +2,16 @@
   // style
 }
 
+.fieldset-person__wrapper {
+
+  &--name-last-name,
+  &--tel-email {
+    margin-bottom: 30px;
+  }
+}
+
 .fieldset-person__item {
+  margin: 0;
   margin-bottom: 10px;
 
   font-style: italic;

@@ -77,27 +77,33 @@
 
         <form class="appointment__form" action="#" method="post">
           <fieldset class="appointment__fieldset fieldset-person">
-            <div class="fieldset-person__item">
-              <label class="fieldset-person__label" for="form-name" aria-label="Name"></label>
-              <input class="fieldset-person__input" type="text" name="name" id="form-name" placeholder="Name">
+            <div class="fieldset-person__wrapper--name-last-name">
+              <p class="fieldset-person__item">
+                <label class="fieldset-person__label" for="form-name" aria-label="Name"></label>
+                <input class="fieldset-person__input" type="text" name="name" id="form-name" placeholder="Name">
+              </p>
+              <p class="fieldset-person__item">
+                <label class="fieldset-person__label" for="form-last-name" aria-label="Last Name"></label>
+                <input class="fieldset-person__input" type="text" name="last-name" id="form-last-name" placeholder="Last Name">
+              </p>
             </div>
-            <div class="fieldset-person__item">
-              <label class="fieldset-person__label" for="form-last-name" aria-label="Last Name"></label>
-              <input class="fieldset-person__input" type="text" name="last-name" id="form-last-name" placeholder="Last Name">
+
+            <div class="fieldset-person__wrapper--tel-email">
+              <p class="fieldset-person__item">
+                <label class="fieldset-person__label" for="form-tel" aria-label="Phone Number"></label>
+                <input class="fieldset-person__input" type="tel" name="tel" id="form-tel" placeholder="Phone Number">
+              </p>
+              <p class="fieldset-person__item">
+                <label class="fieldset-person__label" for="form-email" aria-label="Email"></label>
+                <input class="fieldset-person__input" type="email" name="email" id="form-email" placeholder="Email">
+              </p>
             </div>
-            <div class="fieldset-person__item">
-              <label class="fieldset-person__label" for="form-tel" aria-label="Phone Number"></label>
-              <input class="fieldset-person__input" type="tel" name="tel" id="form-tel" placeholder="Phone Number">
-            </div>
-            <div class="fieldset-person__item">
-              <label class="fieldset-person__label" for="form-email" aria-label="Email"></label>
-              <input class="fieldset-person__input" type="email" name="email" id="form-email" placeholder="Email">
-            </div>
-            <div class="fieldset-person__item">
+
+            <p class="fieldset-person__item">
               <label class="fieldset-person__label" for="form-add-info" aria-label="Add Info"></label>
               <textarea class="fieldset-person__textarea" name="add-info" id="form-add-info" cols="25" rows="4"
                 placeholder="Additional Information"></textarea>
-            </div>
+            </p>
           </fieldset>
 
           <fieldset class="appointment__fieldset fieldset-filter fieldset-filter--radio">
