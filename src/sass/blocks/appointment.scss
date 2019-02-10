@@ -64,4 +64,21 @@
 
 }
 
+@media (min-width: $desktop-width) {
+
+  .appointment__wrapper {
+    width: 80%;
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  .appointment__fieldset {
+
+    &:first-child {
+      margin-top: 60px;
+    }
+  }
+
+}
+
 // mockup

@@ -1611,6 +1611,14 @@ input[type="radio"].visually-hidden {
     .appointment__fieldset:first-child {
       margin-top: 50px; } }
 
+@media (min-width: 1200px) {
+  .appointment__wrapper {
+    width: 80%;
+    padding-top: 60px;
+    padding-bottom: 90px; }
+  .appointment__fieldset:first-child {
+    margin-top: 60px; } }
+
 .fieldset-person__wrapper--name-last-name, .fieldset-person__wrapper--tel-email {
   margin-bottom: 30px; }
 
