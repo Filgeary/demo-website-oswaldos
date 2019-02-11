@@ -232,7 +232,6 @@
     }
   }
 
-
   .fieldset-filter__label--radio::before {
     right: 16px;
   }
@@ -248,7 +247,25 @@
   .fieldset-filter__input--checkbox:checked+.fieldset-filter__label--checkbox::after {
     top: 1px;
   }
+}
 
+@media (min-width: $desktop-width) {
+
+  .fieldset-filter {
+
+    &--checkbox {
+      margin-bottom: 40px;
+    }
+  }
+
+  .fieldset-filter__list-item {
+
+    &--checkbox {
+      width: 33.3%;
+      flex-grow: 0;
+      margin-bottom: 55px;
+    }
+  }
 }
 
 // mockup

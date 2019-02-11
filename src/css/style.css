@@ -1817,6 +1817,14 @@ input[type="radio"].visually-hidden {
   .fieldset-filter__input--checkbox:checked + .fieldset-filter__label--checkbox::after {
     top: 1px; } }
 
+@media (min-width: 1200px) {
+  .fieldset-filter--checkbox {
+    margin-bottom: 40px; }
+  .fieldset-filter__list-item--checkbox {
+    width: 33.3%;
+    flex-grow: 0;
+    margin-bottom: 55px; } }
+
 .page-footer {
   width: auto;
   margin: 0 auto; }
