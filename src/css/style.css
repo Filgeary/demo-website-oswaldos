@@ -1642,7 +1642,8 @@ input[type="radio"].visually-hidden {
   .fieldset-person__wrapper--tel-email {
     margin-bottom: 30px; }
   .fieldset-person__wrapper--name-last-name {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
   .fieldset-person__item {
     margin-bottom: 30px; }
     .fieldset-person__item--name, .fieldset-person__item--last-name {
@@ -1652,6 +1653,19 @@ input[type="radio"].visually-hidden {
     padding: 15px 30px; }
   .fieldset-person__input--name {
     border-right: none; } }
+
+@media (min-width: 1200px) {
+  .fieldset-person__wrapper--tel-email {
+    margin-bottom: 0; }
+  .fieldset-person__wrapper--tel-email {
+    display: flex;
+    justify-content: space-between; }
+  .fieldset-person__item {
+    margin-bottom: 30px; }
+    .fieldset-person__item--name, .fieldset-person__item--last-name, .fieldset-person__item--tel, .fieldset-person__item--email {
+      width: 48%; }
+  .fieldset-person__input--name {
+    border-right: 1px solid #e6dcd1; } }
 
 .fieldset-filter--checkbox {
   width: 75%;

@@ -50,6 +50,7 @@
 
   .fieldset-person__wrapper--name-last-name {
     display: flex;
+    justify-content: space-between;
   }
 
   .fieldset-person__item {
@@ -68,6 +69,36 @@
 
   .fieldset-person__input--name {
     border-right: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .fieldset-person__wrapper {
+
+    &--tel-email {
+      margin-bottom: 0;
+    }
+  }
+
+  .fieldset-person__wrapper--tel-email {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fieldset-person__item {
+    margin-bottom: 30px;
+
+    &--name,
+    &--last-name,
+    &--tel,
+    &--email {
+      width: 48%;
+    }
+  }
+
+  .fieldset-person__input--name {
+    border-right: 1px solid darken($bg-lightgrey, 10%);
   }
 }
 
