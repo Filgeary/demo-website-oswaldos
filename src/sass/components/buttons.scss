@@ -44,8 +44,22 @@
   .btn__primary {
 
     &--appointment {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+
       font-size: 24px;
       line-height: 35px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .btn__primary {
+
+    &--appointment {
+      width: 40%;
     }
   }
 }

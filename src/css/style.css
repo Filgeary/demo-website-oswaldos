@@ -1975,8 +1975,15 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .btn__primary--appointment {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
     font-size: 24px;
     line-height: 35px; } }
+
+@media (min-width: 1200px) {
+  .btn__primary--appointment {
+    width: 40%; } }
 
 .contacts__phone {
   color: #99afef; }
