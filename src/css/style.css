@@ -846,6 +846,18 @@ input[type="radio"].visually-hidden {
   padding-top: 100px;
   margin-bottom: 45px; }
 
+.features__item--fast {
+  background: url(../img/icon-features-fast.svg) no-repeat center 0;
+  background-size: 95px 94px; }
+
+.features__item--cool {
+  background: url(../img/icon-features-cool.svg) no-repeat center 0;
+  background-size: 95px 94px; }
+
+.features__item--price {
+  background: url(../img/icon-features-price.svg) no-repeat center 0;
+  background-size: 95px 94px; }
+
 .features__title {
   margin-bottom: 0;
   font-size: 30px;
@@ -858,18 +870,6 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   line-height: 27px;
   text-align: center; }
-
-.features__title--fast {
-  background: url(../img/icon-features-fast.svg) no-repeat center 0;
-  background-size: 95px 94px; }
-
-.features__title--cool {
-  background: url(../img/icon-features-cool.svg) no-repeat center 0;
-  background-size: 95px 94px; }
-
-.features__title--price {
-  background: url(../img/icon-features-price.svg) no-repeat center 0;
-  background-size: 95px 94px; }
 
 @media (min-width: 768px) {
   .features {
@@ -886,10 +886,10 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #4f4f4f; }
     .features__item:last-child {
       border-bottom: none; }
+    .features__item--fast, .features__item--cool, .features__item--price {
+      background-position: 0 0; }
   .features__title {
     text-align: left; }
-    .features__title--fast, .features__title--cool, .features__title--price {
-      background-position: 0 0; }
   .features__desc {
     margin-bottom: 45px;
     text-align: left; } }
@@ -906,11 +906,11 @@ input[type="radio"].visually-hidden {
     padding: 0;
     padding: 110px 40px 0 40px;
     border-bottom: none; }
+    .features__item--fast, .features__item--cool, .features__item--price {
+      background-position: center 0; }
   .features__title {
     line-height: 42px;
     text-align: center; }
-    .features__title--fast, .features__title--cool, .features__title--price {
-      background-position: center 0; }
   .features__desc {
     text-align: center; } }
 
