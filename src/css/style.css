@@ -603,9 +603,8 @@ input[type="radio"].visually-hidden {
   left: 21px;
   width: 16px;
   height: 16px;
-  opacity: 0.3; }
-  .user-list__login-icon polygon {
-    fill: #f7f4f1; }
+  opacity: 0.3;
+  fill: #f7f4f1; }
 
 @media (max-width: 767px) {
   .user-list__login {
@@ -615,14 +614,11 @@ input[type="radio"].visually-hidden {
       color: #d2c1b0; }
     .user-list__login:hover .user-list__login-icon,
     .user-list__login:focus .user-list__login-icon {
-      opacity: 0.8; }
-      .user-list__login:hover .user-list__login-icon polygon,
-      .user-list__login:focus .user-list__login-icon polygon {
-        fill: #f7f4f1; }
+      opacity: 0.8;
+      fill: #f7f4f1; }
     .user-list__login:active .user-list__login-icon {
-      opacity: 0.3; }
-      .user-list__login:active .user-list__login-icon polygon {
-        fill: #f7f4f1; } }
+      opacity: 0.3;
+      fill: #f7f4f1; } }
 
 @media (min-width: 768px) {
   .user-list {
@@ -634,14 +630,11 @@ input[type="radio"].visually-hidden {
     font-size: 0; }
     .user-list__login:hover .user-list__login-icon,
     .user-list__login:focus .user-list__login-icon {
-      opacity: 1; }
-      .user-list__login:hover .user-list__login-icon polygon,
-      .user-list__login:focus .user-list__login-icon polygon {
-        fill: #826550; }
+      opacity: 1;
+      fill: #826550; }
     .user-list__login:active .user-list__login-icon {
-      opacity: 0.3; }
-      .user-list__login:active .user-list__login-icon polygon {
-        fill: #f7f4f1; }
+      opacity: 0.3;
+      fill: #f7f4f1; }
   .user-list__login-icon {
     top: 28px;
     left: 12px; } }
@@ -670,10 +663,8 @@ input[type="radio"].visually-hidden {
       background-color: #f7f4f1; }
     .user-list__login:hover .user-list__login-icon,
     .user-list__login:focus .user-list__login-icon {
-      opacity: 0.3; }
-      .user-list__login:hover .user-list__login-icon polygon,
-      .user-list__login:focus .user-list__login-icon polygon {
-        fill: #0f0f0f; }
+      opacity: 0.3;
+      fill: #0f0f0f; }
     .user-list__login:active .user-list__login-icon {
       opacity: 0.1; }
   .user-list__login-icon {

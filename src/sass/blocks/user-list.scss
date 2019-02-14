@@ -19,9 +19,11 @@
 
   opacity: 0.3;
 
-  polygon {
-    fill: $font-light;
-  }
+  // polygon {
+  //   fill: $font-light;
+  // }
+
+  fill: $font-light;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -39,17 +41,19 @@
     &:focus .user-list__login-icon {
       opacity: 0.8;
 
-      polygon {
-        fill: $font-light;
-      }
+      // polygon {
+      //   fill: $font-light;
+      // }
+      fill: $font-light;
     }
 
     &:active .user-list__login-icon {
       opacity: 0.3;
 
-      polygon {
-        fill: $font-light;
-      }
+      // polygon {
+      //   fill: $font-light;
+      // }
+      fill: $font-light;
     }
 
   }
@@ -71,17 +75,19 @@
     &:focus .user-list__login-icon {
       opacity: 1;
 
-      polygon {
-        fill: $link-main-nav;
-      }
+      // polygon {
+      //   fill: $link-main-nav;
+      // }
+      fill: $link-main-nav;
     }
 
     &:active .user-list__login-icon {
       opacity: 0.3;
 
-      polygon {
-        fill: $font-light;
-      }
+      // polygon {
+      //   fill: $font-light;
+      // }
+      fill: $font-light;
     }
   }
 
@@ -129,9 +135,10 @@
     &:focus .user-list__login-icon {
       opacity: 0.3;
 
-      polygon {
-        fill: $bg-page-header;
-      }
+      // polygon {
+      //   fill: $bg-page-header;
+      // }
+      fill: $bg-page-header;
     }
 
     &:active .user-list__login-icon {
