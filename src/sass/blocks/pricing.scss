@@ -83,8 +83,10 @@
 .pricing__discount-icon {
   width: 50%;
 
-  background: url(../img/icon-clock.svg) no-repeat center;
-  background-size: 65px 65px;
+  &--clock {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .pricing__discount-text {
@@ -168,7 +170,10 @@
   .pricing__discount-icon {
     width: 40%;
 
-    background-size: 75px 75px;
+    &--clock {
+      width: 75px;
+      height: auto;
+    }
   }
 
   .pricing__discount-text {
@@ -214,7 +219,11 @@
     min-height: 160px;
     margin-bottom: 30px;
 
-    background-size: 140px 140px;
+    &--clock {
+      margin-top: 10px;
+      width: 140px;
+      height: auto;
+    }
   }
 
   .pricing__discount-text {
