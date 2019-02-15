@@ -1981,6 +1981,7 @@ input[type="radio"].visually-hidden {
 
 .copyright__link {
   color: #f7f4f1;
+  text-transform: none;
   border: 1px solid #3f3f3f; }
   .copyright__link:hover, .copyright__link:focus, .copyright__link:active {
     background-color: #3f3f3f; }
