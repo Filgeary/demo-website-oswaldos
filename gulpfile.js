@@ -1,9 +1,13 @@
+// Gulp 3.9.1
+// =====================================================================
+
+// Load plugins
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
-// Compile sass into CSS & auto-inject into browsers
+// Compile SASS into CSS & auto-inject into browsers
 gulp.task('style', function () {
   return gulp.src("src/sass/style.scss")
     .pipe(plumber())
@@ -13,7 +17,7 @@ gulp.task('style', function () {
     .pipe(browserSync.stream());
 });
 
-// Static Server + watching scss/html files
+// Static Server
 gulp.task('serve', ['style'], function () {
 
   browserSync.init({
@@ -24,9 +28,11 @@ gulp.task('serve', ['style'], function () {
     ui: false
   });
 
+// Watch files
   gulp.watch("src/sass/**/*.scss", ['style']);
   gulp.watch("src/*.html").on('change', browserSync.reload);
   gulp.watch("src/js/*.js").on('change', browserSync.reload);
 });
 
+// Complex Tasks
 gulp.task('default', ['serve']);
