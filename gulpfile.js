@@ -9,6 +9,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
+var imagemin = require("gulp-imagemin");
 var browserSync = require('browser-sync').create();
 
 // Compile SASS into CSS, add Autoprefixer, Minify, Rename & auto-inject into browsers
@@ -25,6 +26,25 @@ gulp.task('style', function () {
     .pipe(plumber.stop())
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
+});
+
+// Optimize Images
+gulp.task('images', function () {
+  return gulp.src("src/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.jpegtran({
+        progressive: true
+      }),
+      imagemin.svgo({
+        plugins: [{
+          removeViewBox: false
+        }]
+      })
+    ]))
+    .pipe(gulp.dest("build/img"));
 });
 
 // Static Server
