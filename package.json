@@ -29,6 +29,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "imagemin-webp": "^5.0.0",
     "node-sass": "^4.10.0",
     "stylelint": "~9.8.0",
     "stylelint-config-standard": "~18.2.0"

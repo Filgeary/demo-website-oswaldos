@@ -10,6 +10,7 @@ var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require("gulp-imagemin");
+var webp = require('imagemin-webp');
 var browserSync = require('browser-sync').create();
 
 // Compile SASS into CSS, add Autoprefixer, Minify, Rename & auto-inject into browsers
@@ -44,6 +45,20 @@ gulp.task('images', function () {
         }]
       })
     ]))
+    .pipe(gulp.dest("build/img"));
+});
+
+// Convert images to WebP
+gulp.task('webp', function () {
+  return gulp.src("src/img/**/*.{png,jpg}")
+    .pipe(imagemin([
+      webp({
+        quality: 75
+      })
+    ]))
+    .pipe(rename({
+      extname: ".webp"
+    }))
     .pipe(gulp.dest("build/img"));
 });
 
