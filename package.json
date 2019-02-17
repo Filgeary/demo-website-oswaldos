@@ -20,14 +20,24 @@
   },
   "homepage": "https://github.com/Filgeary/demo-website-3#readme",
   "devDependencies": {
+    "autoprefixer": "^9.4.7",
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.10.0",
     "stylelint": "~9.8.0",
     "stylelint-config-standard": "~18.2.0"
   },
+  "browserslist": [
+    "last 5 version",
+    "> 0.5%",
+    "maintained node versions",
+    "not dead"
+  ],
   "engines": {
     "node": "~10.13.0",
     "npm": "~6.4.1"
