@@ -16,7 +16,7 @@ var svgstore = require('gulp-svgstore');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 
-// Compile SASS into CSS, add Autoprefixer, Minify, Rename & auto-inject into browsers
+// Compile SASS into CSS, add Autoprefixer & auto-inject into browsers
 gulp.task('style', function () {
   return gulp.src("src/sass/style.scss")
     .pipe(plumber())
@@ -24,12 +24,16 @@ gulp.task('style', function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
     .pipe(plumber.stop())
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream());
+});
+
+// Minify CSS & auto-inject into browsers
+gulp.task('minifyStyle', function () {
+  return gulp.src("src/css/style.css")
+    .pipe(minify())
+    .pipe(gulp.dest("build/css"));
 });
 
 // Optimize Images
@@ -65,14 +69,24 @@ gulp.task('webp', function () {
     .pipe(gulp.dest("build/img"));
 });
 
-// Combine svg files into SVG Sprite
-gulp.task('sprite', function () {
+// DevSprite - Combine svg files into SVG Sprite
+gulp.task('devSprite', function () {
   return gulp.src("src/img/svg-sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("src/img"));
+});
+
+// ProdSprite - Combine svg files into SVG Sprite
+gulp.task('prodSprite', function () {
+  return gulp.src("build/img/svg-sprite/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 });
 
 // Copy files
@@ -92,8 +106,8 @@ gulp.task('clean', function () {
   return del("build");
 });
 
-// Static Server
-gulp.task('serve', ['style'], function () {
+// Dev Server
+gulp.task('devServer', function () {
 
   browserSync.init({
     server: "./src",
@@ -109,13 +123,42 @@ gulp.task('serve', ['style'], function () {
   gulp.watch("src/js/*.js").on('change', browserSync.reload);
 });
 
-// Complex Tasks
-gulp.task('default', ['serve']);
+// Prod Server
+gulp.task('prodServer', function () {
 
+  browserSync.init({
+    server: "./build",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+});
+
+// Complex Tasks
+// gulp.task('default', ['devServer']);
+
+// DEV
+gulp.task('dev', function (done) {
+  runSequence(
+    "clean",
+    "style",
+    "devSprite",
+    done
+  );
+});
+
+// PROD
 gulp.task('build', function (done) {
   runSequence(
+    "clean",
     "style",
-    "sprite",
+    "minifyStyle",
+    "images",
+    "webp",
+    "prodSprite",
+    "copy",
     done
   );
 });

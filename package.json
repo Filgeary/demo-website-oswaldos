@@ -8,7 +8,9 @@
     "stylelint": "stylelint ./src/**/*.scss --color --formatter verbose",
     "stylelint-fix": "stylelint ./src/**/*.scss --color --formatter verbose --fix",
     "test": "npm run stylelint",
-    "build": "npm run gulp"
+    "dev": "gulp dev",
+    "build": "gulp build && gulp prodServer",
+    "start": "npm run dev && gulp devServer"
   },
   "repository": {
     "type": "git",
