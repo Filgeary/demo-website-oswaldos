@@ -11,6 +11,7 @@ var minify = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require("gulp-imagemin");
 var webp = require('imagemin-webp');
+var svgstore = require("gulp-svgstore");
 var browserSync = require('browser-sync').create();
 
 // Compile SASS into CSS, add Autoprefixer, Minify, Rename & auto-inject into browsers
@@ -60,6 +61,16 @@ gulp.task('webp', function () {
       extname: ".webp"
     }))
     .pipe(gulp.dest("build/img"));
+});
+
+// Combine svg files into SVG Sprite
+gulp.task('sprite', function () {
+  return gulp.src("src/img/svg-sprite/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("src/img"));
 });
 
 // Static Server
