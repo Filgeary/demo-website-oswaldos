@@ -9,6 +9,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
+var del = require('del');
 var imagemin = require("gulp-imagemin");
 var webp = require('imagemin-webp');
 var svgstore = require('gulp-svgstore');
@@ -84,6 +85,11 @@ gulp.task('copy', function () {
       base: "src"
     })
     .pipe(gulp.dest("build"));
+});
+
+// Delete files
+gulp.task('clean', function () {
+  return del("build");
 });
 
 // Static Server
