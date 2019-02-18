@@ -11,8 +11,9 @@ var minify = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require("gulp-imagemin");
 var webp = require('imagemin-webp');
-var svgstore = require("gulp-svgstore");
+var svgstore = require('gulp-svgstore');
 var browserSync = require('browser-sync').create();
+var runSequence = require('run-sequence');
 
 // Compile SASS into CSS, add Autoprefixer, Minify, Rename & auto-inject into browsers
 gulp.task('style', function () {
@@ -92,3 +93,11 @@ gulp.task('serve', ['style'], function () {
 
 // Complex Tasks
 gulp.task('default', ['serve']);
+
+gulp.task('build', function(done) {
+  runSequence(
+    "style",
+    "sprite",
+    done
+  );
+});

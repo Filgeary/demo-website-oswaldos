@@ -32,6 +32,7 @@
     "gulp-svgstore": "^7.0.1",
     "imagemin-webp": "^5.0.0",
     "node-sass": "^4.10.0",
+    "run-sequence": "^2.2.1",
     "stylelint": "~9.8.0",
     "stylelint-config-standard": "~18.2.0"
   },
