@@ -16,8 +16,9 @@ var svgstore = require('gulp-svgstore');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 
+// Dev Style
 // Compile SASS into CSS, add Autoprefixer & auto-inject into browsers
-gulp.task('style', function () {
+gulp.task('devStyle', function () {
   return gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -29,11 +30,20 @@ gulp.task('style', function () {
     .pipe(browserSync.stream());
 });
 
-// Minify CSS & auto-inject into browsers
-gulp.task('minifyStyle', function () {
-  return gulp.src("src/css/style.css")
+// Prod Style
+// Compile SASS into CSS, add Autoprefixer, Minify CSS & auto-inject into browsers
+gulp.task('prodStyle', function () {
+  return gulp.src("src/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(plumber.stop())
+    .pipe(gulp.dest("src/css"))
     .pipe(minify())
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(browserSync.stream());
 });
 
 // Optimize Images
@@ -69,7 +79,7 @@ gulp.task('webp', function () {
     .pipe(gulp.dest("build/img"));
 });
 
-// DevSprite - Combine svg files into SVG Sprite
+// Dev Sprite - Combine SVG files into SVG Sprite
 gulp.task('devSprite', function () {
   return gulp.src("src/img/svg-sprite/*.svg")
     .pipe(svgstore({
@@ -79,7 +89,7 @@ gulp.task('devSprite', function () {
     .pipe(gulp.dest("src/img"));
 });
 
-// ProdSprite - Combine svg files into SVG Sprite
+// Prod Sprite - Combine SVG files into SVG Sprite
 gulp.task('prodSprite', function () {
   return gulp.src("build/img/svg-sprite/*.svg")
     .pipe(svgstore({
@@ -118,7 +128,7 @@ gulp.task('devServer', function () {
   });
 
   // Watch files
-  gulp.watch("src/sass/**/*.scss", ['style']);
+  gulp.watch("src/sass/**/*.scss", ['devStyle']);
   gulp.watch("src/*.html").on('change', browserSync.reload);
   gulp.watch("src/js/*.js").on('change', browserSync.reload);
 });
@@ -134,6 +144,10 @@ gulp.task('prodServer', function () {
     ui: false
   });
 
+  // Watch files
+  gulp.watch("src/sass/**/*.scss", ['prodStyle']);
+  gulp.watch("src/*.html", ['copy']).on('change', browserSync.reload);
+  gulp.watch("src/js/*.js", ['copy']).on('change', browserSync.reload);
 });
 
 // Complex Tasks
@@ -143,7 +157,7 @@ gulp.task('prodServer', function () {
 gulp.task('dev', function (done) {
   runSequence(
     "clean",
-    "style",
+    "devStyle",
     "devSprite",
     done
   );
@@ -153,8 +167,7 @@ gulp.task('dev', function (done) {
 gulp.task('build', function (done) {
   runSequence(
     "clean",
-    "style",
-    "minifyStyle",
+    "prodStyle",
     "images",
     "webp",
     "prodSprite",
