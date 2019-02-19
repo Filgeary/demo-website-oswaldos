@@ -10,12 +10,12 @@
 
 @media(min-width: $tablet-width) {
   .page-works__header {
-    height: 300px;
+    height: 300px !important;
   }
 }
 
 @media(min-width: $desktop-width) {
   .page-works__header {
-    height: 400px;
+    height: 400px !important;
   }
 }

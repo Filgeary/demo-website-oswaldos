@@ -11,12 +11,12 @@
 
 @media(min-width: $tablet-width) {
   .page-form__header {
-    height: 300px;
+    height: 300px !important;
   }
 }
 
 @media(min-width: $desktop-width) {
   .page-form__header {
-    height: 400px;
+    height: 400px !important;
   }
 }
