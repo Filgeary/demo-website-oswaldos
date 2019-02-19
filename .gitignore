@@ -1,3 +1,6 @@
+# Build
+build/
+
 # MacOS trash
 .DS_Store
 
