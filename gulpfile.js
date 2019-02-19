@@ -1,6 +1,10 @@
 // Gulp 3.9.1
 // =====================================================================
 
+// TODO:
+// - add HTML minify
+// - add JS minify (uglify)
+
 // Load plugins
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
@@ -56,6 +60,9 @@ gulp.task('images', function () {
       imagemin.jpegtran({
         progressive: true
       }),
+
+// TODO:
+// - setup SVG settings (need Practice for Real Projects)
       imagemin.svgo({
         plugins: [{
           removeViewBox: false
@@ -79,6 +86,9 @@ gulp.task('webp', function () {
     .pipe(gulp.dest("build/img"));
 });
 
+// TODO:
+// - setup SVG settings (need Practice for Real Projects)
+
 // Dev Sprite - Combine SVG files into SVG Sprite
 gulp.task('devSprite', function () {
   return gulp.src("src/img/svg-sprite/*.svg")
@@ -88,6 +98,9 @@ gulp.task('devSprite', function () {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("src/img"));
 });
+
+// TODO:
+// - setup SVG settings (need Practice for Real Projects)
 
 // Prod Sprite - Combine SVG files into SVG Sprite
 gulp.task('prodSprite', function () {
@@ -118,7 +131,6 @@ gulp.task('clean', function () {
 
 // Dev Server
 gulp.task('devServer', function () {
-
   browserSync.init({
     server: "./src",
     notify: false,
@@ -135,7 +147,6 @@ gulp.task('devServer', function () {
 
 // Prod Server
 gulp.task('prodServer', function () {
-
   browserSync.init({
     server: "./build",
     notify: false,
@@ -146,6 +157,9 @@ gulp.task('prodServer', function () {
 
   // Watch files
   gulp.watch("src/sass/**/*.scss", ['prodStyle']);
+
+  // FIXME:
+  // after adding HTML,JS minify
   gulp.watch("src/*.html", ['copy']).on('change', browserSync.reload);
   gulp.watch("src/js/*.js", ['copy']).on('change', browserSync.reload);
 });
