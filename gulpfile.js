@@ -50,6 +50,9 @@ gulp.task('prodStyle', function () {
     .pipe(browserSync.stream());
 });
 
+// TODO:
+// Setup settings
+
 // Minify HTML
 gulp.task('html', function () {
   return gulp.src("src/*.html")
