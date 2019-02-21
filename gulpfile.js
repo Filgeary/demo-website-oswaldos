@@ -2,7 +2,8 @@
 // =====================================================================
 
 // TODO:
-// - add JS minify (uglify)
+// - setup Minify HTML settings
+// - setup SVG settings
 
 // Load plugins
 var gulp = require('gulp');
@@ -12,6 +13,8 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
 var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 var rename = require('gulp-rename');
 var del = require('del');
 var imagemin = require('gulp-imagemin');
@@ -51,7 +54,7 @@ gulp.task('prodStyle', function () {
 });
 
 // TODO:
-// Setup settings
+// Setup Minify HTML settings
 
 // Minify HTML
 gulp.task('html', function () {
@@ -60,6 +63,15 @@ gulp.task('html', function () {
       collapseWhitespace: true
     }))
     .pipe(gulp.dest("build"));
+});
+
+// Minify JS
+gulp.task('script', function () {
+  return pipeline(
+    gulp.src('src/js/*.js'),
+    uglify(),
+    gulp.dest('build/js')
+  );
 });
 
 // Optimize Images
@@ -124,14 +136,10 @@ gulp.task('prodSprite', function () {
     .pipe(gulp.dest("build/img"));
 });
 
-// FIXME:
-// after adding JS minify
-
 // Copy files
 gulp.task('copy', function () {
   return gulp.src([
-      "src/fonts/**/*.{woff,woff2}",
-      "src/js/**"
+      "src/fonts/**/*.{woff,woff2}"
     ], {
       base: "src"
     })
@@ -171,11 +179,8 @@ gulp.task('prodServer', function () {
 
   // Watch files
   gulp.watch("src/sass/**/*.scss", ['prodStyle']);
-
-  // FIXME:
-  // after adding JS minify
   gulp.watch("src/*.html", ['html']).on('change', browserSync.reload);
-  gulp.watch("src/js/*.js", ['copy']).on('change', browserSync.reload);
+  gulp.watch("src/js/*.js", ['script']).on('change', browserSync.reload);
 });
 
 // Complex Tasks
@@ -197,6 +202,7 @@ gulp.task('build', function (done) {
     "clean",
     "html",
     "prodStyle",
+    "script",
     "images",
     "webp",
     "prodSprite",
