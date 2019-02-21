@@ -61,8 +61,8 @@ gulp.task('images', function () {
         progressive: true
       }),
 
-// TODO:
-// - setup SVG settings (need Practice for Real Projects)
+      // TODO:
+      // - setup SVG settings (need Practice for Real Projects)
       imagemin.svgo({
         plugins: [{
           removeViewBox: false
@@ -111,6 +111,9 @@ gulp.task('prodSprite', function () {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
+
+// FIXME:
+// after adding HTML,JS minify
 
 // Copy files
 gulp.task('copy', function () {
