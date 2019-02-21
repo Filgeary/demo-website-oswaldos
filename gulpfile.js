@@ -35,7 +35,7 @@ gulp.task('devStyle', function () {
 });
 
 // Prod Style
-// Compile SASS into CSS, add Autoprefixer, Minify CSS & auto-inject into browsers
+// Compile SASS into CSS, add Autoprefixer, Minify CSS, Move to Build & auto-inject into browsers
 gulp.task('prodStyle', function () {
   return gulp.src("src/sass/style.scss")
     .pipe(plumber())
