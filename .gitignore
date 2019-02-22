@@ -1,6 +1,9 @@
 # Build
 build/
 
+# Webp
+src/img/**/*.webp
+
 # MacOS trash
 .DS_Store
 

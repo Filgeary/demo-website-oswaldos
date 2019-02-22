@@ -97,7 +97,21 @@ gulp.task('images', function () {
 });
 
 // Convert images to WebP
-gulp.task('webp', function () {
+gulp.task('devWebp', function () {
+  return gulp.src("src/img/**/*.{png,jpg}")
+    .pipe(imagemin([
+      webp({
+        quality: 75
+      })
+    ]))
+    .pipe(rename({
+      extname: ".webp"
+    }))
+    .pipe(gulp.dest("src/img"));
+});
+
+// Convert images to WebP
+gulp.task('prodWebp', function () {
   return gulp.src("src/img/**/*.{png,jpg}")
     .pipe(imagemin([
       webp({
@@ -108,6 +122,11 @@ gulp.task('webp', function () {
       extname: ".webp"
     }))
     .pipe(gulp.dest("build/img"));
+});
+
+// Delete Dev Webp files from src
+gulp.task('delDevWebp', function () {
+  return del("src/img/**/*.webp");
 });
 
 // TODO:
@@ -163,8 +182,16 @@ gulp.task('devServer', function () {
 
   // Watch files
   gulp.watch("src/sass/**/*.scss", ['devStyle']);
-  gulp.watch("src/*.html").on('change', browserSync.reload);
-  gulp.watch("src/js/*.js").on('change', browserSync.reload);
+  gulp.watch("src/*.html")
+    .on('change', browserSync.reload);
+  gulp.watch("src/js/*.js")
+    .on('change', browserSync.reload);
+  gulp.watch("src/img/**/*.{png,jpg}", ['devWebp'])
+    .on('change', browserSync.reload);
+  gulp.watch("src/img/*.svg")
+    .on('change', browserSync.reload);
+  gulp.watch("src/img/svg-sprite/*.svg", ['devSprite'])
+    .on('change', browserSync.reload);
 });
 
 // Prod Server
@@ -179,8 +206,10 @@ gulp.task('prodServer', function () {
 
   // Watch files
   gulp.watch("src/sass/**/*.scss", ['prodStyle']);
-  gulp.watch("src/*.html", ['html']).on('change', browserSync.reload);
-  gulp.watch("src/js/*.js", ['script']).on('change', browserSync.reload);
+  gulp.watch("src/*.html", ['html'])
+    .on('change', browserSync.reload);
+  gulp.watch("src/js/*.js", ['script'])
+    .on('change', browserSync.reload);
 });
 
 // Complex Tasks
@@ -190,7 +219,9 @@ gulp.task('prodServer', function () {
 gulp.task('dev', function (done) {
   runSequence(
     "clean",
+    "delDevWebp",
     "devStyle",
+    "devWebp",
     "devSprite",
     done
   );
@@ -204,7 +235,7 @@ gulp.task('build', function (done) {
     "prodStyle",
     "script",
     "images",
-    "webp",
+    "prodWebp",
     "prodSprite",
     "copy",
     done
