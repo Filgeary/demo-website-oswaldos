@@ -4,6 +4,7 @@
 // TODO:
 // - setup Minify HTML settings
 // - setup SVG settings
+// - setup Watch files for Build
 
 // Load plugins
 var gulp = require('gulp');
@@ -124,7 +125,7 @@ gulp.task('prodWebp', function () {
     .pipe(gulp.dest("build/img"));
 });
 
-// Delete Dev Webp files from src
+// Delete Dev Webp files from Src
 gulp.task('delDevWebp', function () {
   return del("src/img/**/*.webp");
 });
@@ -203,6 +204,9 @@ gulp.task('prodServer', function () {
     cors: true,
     ui: false
   });
+
+  // TODO:
+  // Setup Watch files for Build
 
   // Watch files
   gulp.watch("src/sass/**/*.scss", ['prodStyle']);
