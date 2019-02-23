@@ -2179,6 +2179,20 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 30px 0 40px 0; }
 
+.page-contacts__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.page-contacts__text {
+  margin: 0;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 34px; }
+
 .page-contacts__wrapper-iframe {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -2194,11 +2208,41 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .page-contacts__header {
-    height: 300px !important; } }
+    height: 300px !important; }
+  .page-contacts__wrapper {
+    width: 83.3%;
+    max-width: 1200px;
+    padding: 50px 0 60px 0; }
+  .page-contacts__title {
+    font-size: 40px;
+    line-height: 30px; }
+  .page-contacts__text {
+    margin: 40px 0; }
+  .page-contacts__wrapper-iframe {
+    margin: 0 auto;
+    max-width: 800px; } }
 
 @media (min-width: 1200px) {
   .page-contacts__header {
-    height: 400px !important; } }
+    height: 400px !important; }
+  .page-contacts__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    padding: 60px 0 70px 0; }
+  .page-contacts__title {
+    text-align: left; }
+  .page-contacts__text {
+    margin-bottom: 0;
+    text-align: left; }
+  .page-contacts__contacts-block {
+    width: 40%; }
+  .page-contacts__map {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    width: 55%; } }
 
 .page-works__main {
   background-color: #f8f5f2; }
