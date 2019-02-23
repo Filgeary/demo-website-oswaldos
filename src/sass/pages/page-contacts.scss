@@ -1,0 +1,15 @@
+.page-contacts__main {
+  background-color: $bg-lightgrey;
+}
+
+@media(min-width: $tablet-width) {
+  .page-contacts__header {
+    height: 300px !important;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .page-contacts__header {
+    height: 400px !important;
+  }
+}

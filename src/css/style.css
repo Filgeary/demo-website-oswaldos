@@ -2170,6 +2170,17 @@ input[type="radio"].visually-hidden {
   .slider__toggle--active {
     background-color: #d2c4b6; }
 
+.page-contacts__main {
+  background-color: #f8f5f2; }
+
+@media (min-width: 768px) {
+  .page-contacts__header {
+    height: 300px !important; } }
+
+@media (min-width: 1200px) {
+  .page-contacts__header {
+    height: 400px !important; } }
+
 .page-works__main {
   background-color: #f8f5f2; }
 
