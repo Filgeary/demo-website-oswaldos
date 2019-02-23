@@ -2171,7 +2171,26 @@ input[type="radio"].visually-hidden {
     background-color: #d2c4b6; }
 
 .page-contacts__main {
+  color: #404040;
   background-color: #f8f5f2; }
+
+.page-contacts__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 30px 0 40px 0; }
+
+.page-contacts__wrapper-iframe {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.page-contacts__iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
 
 @media (min-width: 768px) {
   .page-contacts__header {
