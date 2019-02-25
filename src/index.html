@@ -398,30 +398,32 @@
 
   </footer>
 
-<!-- Modal Login -->
+  <!-- Modal Login -->
   <section class="modal modal__login">
-    <h2>Personal Cabinet</h2>
-    <p class="modal__description">Type your login and password, please</p>
-    <form class="modal__login-form" action="#" method="post">
-      <p class="modal__form-item">
-        <label for="user-login" aria-label="Login"></label>
-        <input class="modal__login-icon--user" id="user-login" type="text" name="login" placeholder="Login">
-      </p>
-      <p class="modal__form-item">
-        <label for="user-password" aria-label="Password"></label>
-        <input class="modal__login-icon--password" id="user-password" type="password" name="password" placeholder="Password">
-      </p>
-      <p class="modal__form-item modal__form-item--login-help">
-        <label class="modal__login-checkbox" for="remember">
-          <input class="visually-hidden" type="checkbox" name="remember" id="remember">
-          <span class="modal__checkbox-indicator"></span>
-          Remember Me
-        </label>
-        <a class="modal__restore-link" href="#">I forgot password</a>
-      </p>
-      <button class="btn modal__login-btn" type="submit">Sign In</button>
-    </form>
-    <button class="modal__close-btn" type="button" value="close"></button>
+    <div class="modal__login-wrapper">
+      <h2>Personal Cabinet</h2>
+      <p class="modal__description">Type your login and password, please</p>
+      <form class="modal__login-form" action="#" method="post">
+        <p class="modal__form-item">
+          <label for="user-login" aria-label="Login"></label>
+          <input class="modal__login-icon--user" id="user-login" type="text" name="login" placeholder="Login">
+        </p>
+        <p class="modal__form-item">
+          <label for="user-password" aria-label="Password"></label>
+          <input class="modal__login-icon--password" id="user-password" type="password" name="password" placeholder="Password">
+        </p>
+        <p class="modal__form-item modal__form-item--login-help">
+          <label class="modal__login-checkbox" for="remember">
+            <input class="visually-hidden" type="checkbox" name="remember" id="remember">
+            <span class="modal__checkbox-indicator"></span>
+            Remember Me
+          </label>
+          <a class="modal__restore-link" href="#">I forgot password</a>
+        </p>
+        <button class="btn btn__primary modal__login-btn" type="submit">Sign In</button>
+        <button class="btn modal__close-btn" type="button" value="close">Close</button>
+      </form>
+    </div>
   </section>
 
 
