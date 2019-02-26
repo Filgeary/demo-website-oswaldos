@@ -2112,6 +2112,8 @@ input[type="radio"].visually-hidden {
   background: #4169e1; }
   .btn__primary:hover, .btn__primary:focus, .btn__primary:active {
     background-color: #2351dc; }
+  .btn__primary--modal-login {
+    width: 45%; }
 
 @media (min-width: 768px) {
   .btn__primary--appointment {
@@ -2134,6 +2136,14 @@ input[type="radio"].visually-hidden {
   border: 1px solid #3f3f3f; }
   .copyright__link:hover, .copyright__link:focus, .copyright__link:active {
     background-color: #3f3f3f; }
+
+.modal__close-btn {
+  width: 45%;
+  color: #404040;
+  border: 1px solid #ddcfc0;
+  background-color: #f8f5f2; }
+  .modal__close-btn:hover, .modal__close-btn:focus, .modal__close-btn:active {
+    background-color: #666666; }
 
 @media (max-width: 767px) {
   .reviews__write,
@@ -2176,21 +2186,86 @@ input[type="radio"].visually-hidden {
   display: none;
   color: #404040;
   background-color: #f8f5f2;
-  border: 1px solid #826550;
   box-shadow: 30px 30px 50px rgba(87, 87, 87, 0.7); }
 
 .modal--show {
   display: block; }
 
 .modal__login {
-  top: 17vh;
+  top: 16.5vh;
   left: 0;
   width: 100%;
-  padding: 40px 0; }
+  padding: 30px 0 40px 0; }
 
 .modal__login-wrapper {
   width: 87.5%;
   margin: 0 auto; }
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center; }
+
+.modal__form-item {
+  margin: 0;
+  margin-bottom: 30px; }
+  .modal__form-item:first-child {
+    margin-bottom: 10px; }
+  .modal__form-item--login-help {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+
+.modal__input {
+  width: 100%;
+  padding: 10px 20px;
+  font: inherit;
+  font-style: italic;
+  border: 1px solid #e6dcd1; }
+
+.modal__label--checkbox {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer; }
+  .modal__label--checkbox:hover, .modal__label--checkbox:focus {
+    color: #1f49c7; }
+
+.modal__input--checkbox[type="checkbox"] + .modal__checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #e6dcd1;
+  background-color: #fff; }
+
+.modal__input--checkbox[type="checkbox"]:focus + .modal__checkbox-indicator {
+  border-color: #e6dcd1;
+  outline: thin dotted; }
+
+.modal__input--checkbox[type="checkbox"]:checked + .modal__checkbox-indicator::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background: url(../img/icon-mark.svg) no-repeat center; }
+
+.modal__buttons-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 .page-contacts__main {
   color: #404040;
