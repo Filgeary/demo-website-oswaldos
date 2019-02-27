@@ -2121,7 +2121,9 @@ input[type="radio"].visually-hidden {
     width: 65%;
     margin: 0 auto;
     font-size: 24px;
-    line-height: 35px; } }
+    line-height: 35px; }
+  .btn__primary--modal-login {
+    width: 100%; } }
 
 @media (min-width: 1200px) {
   .btn__primary--appointment {
@@ -2150,7 +2152,8 @@ input[type="radio"].visually-hidden {
   .reviews__prev,
   .reviews__next,
   .works__to-home,
-  .appointment__to-home {
+  .appointment__to-home,
+  .modal__close-btn--secondary {
     display: none; } }
 
 @media (min-width: 768px) {
@@ -2160,7 +2163,9 @@ input[type="radio"].visually-hidden {
   .appointment__to-home {
     width: 25%; }
   .contacts__phone:hover, .contacts__phone:focus, .contacts__phone:active {
-    color: #4169e1; } }
+    color: #4169e1; }
+  .modal__close-btn {
+    display: none; } }
 
 .slider__toggles {
   margin: 0 auto;
@@ -2289,6 +2294,41 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between; }
+
+@media (min-width: 768px) {
+  .modal__login {
+    left: 20vw;
+    width: 60%;
+    padding: 50px 0 60px 0; }
+  .modal__login-wrapper {
+    width: 70%; }
+  .modal__title {
+    font-size: 40px;
+    line-height: 30px; }
+  .modal__input {
+    padding: 15px 25px; }
+    .modal__input::-webkit-input-placeholder {
+      font-size: 22px;
+      line-height: 30px; }
+    .modal__input:-ms-input-placeholder {
+      font-size: 22px;
+      line-height: 30px; }
+    .modal__input::-ms-input-placeholder {
+      font-size: 22px;
+      line-height: 30px; }
+    .modal__input::placeholder {
+      font-size: 22px;
+      line-height: 30px; }
+  .modal__close-btn--secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border: 7px solid #404040;
+    background: #404040 url(../img/icon-toggle-close.svg) no-repeat center;
+    background-size: cover;
+    cursor: pointer; } }
 
 .page-contacts__main {
   color: #404040;

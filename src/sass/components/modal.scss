@@ -125,4 +125,46 @@
   justify-content: space-between;
 }
 
+@media (min-width: $tablet-width) {
+  .modal__login {
+    left: 20vw;
+
+    width: 60%;
+    padding: 50px 0 60px 0;
+  }
+
+  .modal__login-wrapper {
+    width: 70%;
+  }
+
+  .modal__title {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .modal__input {
+    padding: 15px 25px;
+
+    &::placeholder {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  .modal__close-btn--secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 40px;
+    height: 40px;
+
+    border: 7px solid #404040;
+    background: #404040 url(../img/icon-toggle-close.svg) no-repeat center;
+    background-size: cover;
+
+    cursor: pointer;
+  }
+}
+
 // mockup
