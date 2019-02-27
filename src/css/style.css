@@ -2190,7 +2190,7 @@ input[type="radio"].visually-hidden {
   z-index: 100;
   color: #404040;
   background-color: #f8f5f2;
-  box-shadow: 30px 30px 50px rgba(25, 25, 25, 0.7); }
+  box-shadow: 10px 30px 30px 20px rgba(40, 40, 40, 0.7); }
 
 .modal--show {
   display: block; }
