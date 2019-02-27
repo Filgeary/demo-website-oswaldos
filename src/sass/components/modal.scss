@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 100;
 
-  display: none;
+  // display: none;
 
   color: $font-dark;
 
@@ -66,6 +66,16 @@
   font-style: italic;
 
   border: 1px solid darken($bg-lightgrey, 10%);
+
+  &--user::placeholder {
+    background: url(../img/icon-user.svg) no-repeat right;
+    background-size: 17px 17px;
+  }
+
+  &--password::placeholder {
+    background: url(../img/icon-lock.svg) no-repeat right;
+    background-size: 17px 17px;
+  }
 }
 
 .modal__label--checkbox {

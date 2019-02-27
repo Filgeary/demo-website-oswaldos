@@ -2183,7 +2183,6 @@ input[type="radio"].visually-hidden {
 .modal {
   position: fixed;
   z-index: 100;
-  display: none;
   color: #404040;
   background-color: #f8f5f2;
   box-shadow: 30px 30px 50px rgba(87, 87, 87, 0.7); }
@@ -2231,6 +2230,30 @@ input[type="radio"].visually-hidden {
   font: inherit;
   font-style: italic;
   border: 1px solid #e6dcd1; }
+  .modal__input--user::-webkit-input-placeholder {
+    background: url(../img/icon-user.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--user:-ms-input-placeholder {
+    background: url(../img/icon-user.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--user::-ms-input-placeholder {
+    background: url(../img/icon-user.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--user::placeholder {
+    background: url(../img/icon-user.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--password::-webkit-input-placeholder {
+    background: url(../img/icon-lock.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--password:-ms-input-placeholder {
+    background: url(../img/icon-lock.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--password::-ms-input-placeholder {
+    background: url(../img/icon-lock.svg) no-repeat right;
+    background-size: 17px 17px; }
+  .modal__input--password::placeholder {
+    background: url(../img/icon-lock.svg) no-repeat right;
+    background-size: 17px 17px; }
 
 .modal__label--checkbox {
   position: relative;
