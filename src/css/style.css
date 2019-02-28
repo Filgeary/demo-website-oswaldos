@@ -2112,8 +2112,6 @@ input[type="radio"].visually-hidden {
   background: #4169e1; }
   .btn__primary:hover, .btn__primary:focus, .btn__primary:active {
     background-color: #2351dc; }
-  .btn__primary--modal-login {
-    width: 45%; }
 
 @media (min-width: 768px) {
   .btn__primary--appointment {
@@ -2121,9 +2119,7 @@ input[type="radio"].visually-hidden {
     width: 65%;
     margin: 0 auto;
     font-size: 24px;
-    line-height: 35px; }
-  .btn__primary--modal-login {
-    width: 100%; } }
+    line-height: 35px; } }
 
 @media (min-width: 1200px) {
   .btn__primary--appointment {
@@ -2139,21 +2135,12 @@ input[type="radio"].visually-hidden {
   .copyright__link:hover, .copyright__link:focus, .copyright__link:active {
     background-color: #3f3f3f; }
 
-.modal__close-btn {
-  width: 45%;
-  color: #404040;
-  border: 1px solid #ddcfc0;
-  background-color: #f8f5f2; }
-  .modal__close-btn:hover, .modal__close-btn:focus, .modal__close-btn:active {
-    background-color: #666666; }
-
 @media (max-width: 767px) {
   .reviews__write,
   .reviews__prev,
   .reviews__next,
   .works__to-home,
-  .appointment__to-home,
-  .modal__close-btn--secondary {
+  .appointment__to-home {
     display: none; } }
 
 @media (min-width: 768px) {
@@ -2163,9 +2150,7 @@ input[type="radio"].visually-hidden {
   .appointment__to-home {
     width: 25%; }
   .contacts__phone:hover, .contacts__phone:focus, .contacts__phone:active {
-    color: #4169e1; }
-  .modal__close-btn {
-    display: none; } }
+    color: #4169e1; } }
 
 .slider__toggles {
   margin: 0 auto;
@@ -2188,6 +2173,7 @@ input[type="radio"].visually-hidden {
 .modal {
   position: fixed;
   z-index: 100;
+  display: none;
   color: #404040;
   background-color: #f8f5f2;
   box-shadow: 10px 30px 30px 20px rgba(40, 40, 40, 0.7); }
@@ -2289,11 +2275,16 @@ input[type="radio"].visually-hidden {
   height: 17px;
   background: url(../img/icon-mark.svg) no-repeat center; }
 
-.modal__buttons-wrapper {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between; }
+.modal__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 7px solid #404040;
+  background: #404040 url(../img/icon-toggle-close.svg) no-repeat center;
+  background-size: cover;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .modal__login {
@@ -2318,17 +2309,7 @@ input[type="radio"].visually-hidden {
       line-height: 30px; }
     .modal__input::placeholder {
       font-size: 22px;
-      line-height: 30px; }
-  .modal__close-btn--secondary {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    border: 7px solid #404040;
-    background: #404040 url(../img/icon-toggle-close.svg) no-repeat center;
-    background-size: cover;
-    cursor: pointer; } }
+      line-height: 30px; } }
 
 @media (min-width: 1200px) {
   .modal__login {

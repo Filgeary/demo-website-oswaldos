@@ -37,10 +37,6 @@
   &:active {
     background-color: $btn-primary-bg-hover;
   }
-
-  &--modal-login {
-    width: 45%;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -54,10 +50,6 @@
 
       font-size: 24px;
       line-height: 35px;
-    }
-
-    &--modal-login {
-      width: 100%;
     }
   }
 }
@@ -92,29 +84,13 @@
   }
 }
 
-.modal__close-btn {
-  width: 45%;
-
-  color: $font-dark;
-
-  border: 1px solid darken($bg-lightgrey, 15%);
-  background-color: $bg-lightgrey;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: hsl(0, 0%, 40%);
-  }
-}
-
 @media (max-width: $mobile-width-only) {
 
   .reviews__write,
   .reviews__prev,
   .reviews__next,
   .works__to-home,
-  .appointment__to-home,
-  .modal__close-btn--secondary {
+  .appointment__to-home {
     display: none;
   }
 }
@@ -135,10 +111,6 @@
     &:active {
       color: $link-color;
     }
-  }
-
-  .modal__close-btn {
-    display: none;
   }
 }
 
