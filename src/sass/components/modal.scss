@@ -167,4 +167,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .modal__login {
+    left: 30vw;
+
+    width: 40%;
+    padding: 50px 0 60px 0;
+  }
+}
+
 // mockup

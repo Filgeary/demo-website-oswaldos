@@ -2330,6 +2330,12 @@ input[type="radio"].visually-hidden {
     background-size: cover;
     cursor: pointer; } }
 
+@media (min-width: 1200px) {
+  .modal__login {
+    left: 30vw;
+    width: 40%;
+    padding: 50px 0 60px 0; } }
+
 .page-contacts__main {
   color: #404040;
   background-color: #f8f5f2; }
