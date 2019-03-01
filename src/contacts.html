@@ -166,6 +166,40 @@
 
   </footer>
 
+  <!-- Modal Login -->
+  <section class="modal modal__login">
+    <div class="modal__login-wrapper">
+      <h2 class="modal__title">Personal Cabinet</h2>
+      <p class="modal__description">Type your login and password, please</p>
+      <form class="modal__login-form" action="#" method="post">
+        <p class="modal__form-item">
+          <label class="modal__label" for="user-login" aria-label="Login"></label>
+          <input class="modal__input modal__input--user" id="user-login" type="text" name="login" placeholder="Login"
+            required>
+        </p>
+
+        <p class="modal__form-item">
+          <label class="modal__label" for="user-password" aria-label="Password"></label>
+          <input class="modal__input modal__input--password" id="user-password" type="password" name="password"
+            placeholder="Password" required>
+        </p>
+
+        <p class="modal__form-item modal__form-item--login-help">
+          <label class="modal__label modal__label--checkbox" for="remember">
+            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember" id="remember">
+            <span class="modal__checkbox-indicator"></span>
+            Remember Me
+          </label>
+          <a class="modal__restore-link" href="#">I forgot password!</a>
+        </p>
+
+        <button class="btn btn__primary btn__primary--modal-login" type="submit">Sign In</button>
+      </form>
+    </div>
+
+    <button class="modal__close-btn" type="button" value="close" aria-label="Close"></button>
+  </section>
+
 
   <script src="js/main.js"></script>
 
