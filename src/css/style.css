@@ -2049,6 +2049,8 @@ input[type="radio"].visually-hidden {
   border: 1px solid #3f3f3f; }
   .social__item:nth-child(2), .social__item:nth-child(3) {
     border-left: none; }
+  .social__item:hover, .social__item:focus, .social__item:active {
+    background-color: #434343; }
 
 .social__item svg {
   display: block; }

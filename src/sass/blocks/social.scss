@@ -22,6 +22,12 @@
   &:nth-child(3) {
     border-left: none;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($color: $bg-darkgrey, $amount: 10);
+  }
 }
 
 .social__item svg {
