@@ -21,6 +21,7 @@ var del = require('del');
 var imagemin = require('gulp-imagemin');
 var webp = require('imagemin-webp');
 var svgstore = require('gulp-svgstore');
+var ghPages = require('gulp-gh-pages');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 
@@ -216,8 +217,14 @@ gulp.task('prodServer', function () {
     .on('change', browserSync.reload);
 });
 
+// Deploy to Github Pages
+gulp.task('deployGithub', function () {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
 // Complex Tasks
-// gulp.task('default', ['devServer']);
+// ==================================================================
 
 // DEV
 gulp.task('dev', function (done) {
