@@ -218,13 +218,15 @@ gulp.task('prodServer', function () {
 });
 
 // Deploy to Github Pages
+// =====================================================================
+
 gulp.task('deployGithub', function () {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
 
 // Complex Tasks
-// ==================================================================
+// =====================================================================
 
 // DEV
 gulp.task('dev', function (done) {
