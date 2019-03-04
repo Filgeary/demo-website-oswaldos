@@ -2052,7 +2052,7 @@ input[type="radio"].visually-hidden {
   .social__item:hover, .social__item:focus, .social__item:active {
     background-color: #434343; }
 
-.social__item svg {
+.social__icon {
   display: block; }
 
 .social__link {
@@ -2078,7 +2078,7 @@ input[type="radio"].visually-hidden {
       border-left: 1px solid #3f3f3f; }
     .social__item:last-child {
       margin-right: 0; }
-  .social__item svg {
+  .social__icon {
     width: 25px;
     height: 25px; }
   .social__link {
