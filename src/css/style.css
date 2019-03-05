@@ -1239,6 +1239,11 @@ input[type="radio"].visually-hidden {
     border: 1px solid #e5ddd5;
     background-color: #f8f5f2;
     cursor: pointer; }
+    .reviews__prev:hover, .reviews__prev:focus, .reviews__prev:active,
+    .reviews__next:hover,
+    .reviews__next:focus,
+    .reviews__next:active {
+      background-color: gainsboro; }
   .reviews__prev {
     -webkit-box-ordinal-group: 0;
             order: -1;

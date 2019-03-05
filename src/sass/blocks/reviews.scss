@@ -134,6 +134,12 @@
     background-color: $bg-lightgrey;
 
     cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten($bg-darkgrey, 70%);
+    }
   }
 
   .reviews__prev {
