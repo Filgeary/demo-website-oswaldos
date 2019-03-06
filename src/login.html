@@ -22,7 +22,7 @@
 <body>
 
 
-  <header class="page-header">
+  <header class="page-header page-login__header">
 
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -55,7 +55,7 @@
 
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__login site-list__item--active">
+            <a class="user-list__login">
               <svg class="user-list__login-icon" width="16" height="16">
                 <use xlink:href="img/sprite.svg#login-icon"></use>
               </svg>
@@ -71,12 +71,12 @@
   </header>
 
 
-  <main class="page-main">
+  <main class="page-main page-login__main">
 
     <h1 class="visually-hidden">Login - Personal Cabinet</h1>
 
     <!-- Modal Login -->
-    <section class="modal modal__login modal--show">
+    <section class="modal modal__login modal--show page-login__modal">
       <div class="modal__login-wrapper">
         <h2 class="modal__title">Personal Cabinet</h2>
         <p class="modal__description">Type your login and password, please</p>
@@ -106,7 +106,7 @@
         </form>
       </div>
 
-      <button class="modal__close-btn" type="button" value="close" aria-label="Close"></button>
+      <button class="modal__close-btn page-login__modal-close-btn" type="button" value="close" aria-label="Close"></button>
     </section>
 
   </main>

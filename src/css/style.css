@@ -2428,3 +2428,21 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1200px) {
   .page-form__header {
     height: 400px !important; } }
+
+.page-login__main {
+  background-color: #f8f5f2; }
+
+.page-login__modal {
+  position: static;
+  box-shadow: none; }
+
+.page-login__modal-close-btn {
+  display: none; }
+
+@media (min-width: 768px) {
+  .page-login__header {
+    height: 300px !important; } }
+
+@media (min-width: 1200px) {
+  .page-login__header {
+    height: 400px !important; } }

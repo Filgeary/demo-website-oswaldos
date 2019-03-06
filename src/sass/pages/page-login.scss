@@ -1,0 +1,27 @@
+.page-login__main {
+  background-color: $bg-lightgrey;
+}
+
+.page-login__modal {
+  position: static;
+
+  box-shadow: none;
+}
+
+.page-login__modal-close-btn {
+  display: none;
+}
+
+@media(min-width: $tablet-width) {
+  .page-login__header {
+    height: 300px !important;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .page-login__header {
+    height: 400px !important;
+  }
+}
+
+// mockup
