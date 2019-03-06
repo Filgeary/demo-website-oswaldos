@@ -119,6 +119,11 @@
     max-width: 160px;
   }
 
+  .user-list__item--active::after {
+    right: 0;
+    left: 0;
+  }
+
   .user-list__login {
     position: relative;
 

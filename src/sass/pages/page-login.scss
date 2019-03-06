@@ -26,6 +26,33 @@
   .page-login__header {
     height: 400px !important;
   }
+
+  .page-login__user-list-item .user-list__login {
+
+    &:hover,
+    &:focus {
+      color: $font-light;
+
+      background-color: $bg-page-header;
+    }
+
+    &:active {
+      color: $font-light;
+
+      background-color: $bg-page-header;
+    }
+
+    &:hover .user-list__login-icon,
+    &:focus .user-list__login-icon {
+      opacity: 0.3;
+
+      fill: $font-light;
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 // mockup
