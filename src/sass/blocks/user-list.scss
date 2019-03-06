@@ -64,6 +64,22 @@
     width: 60px;
   }
 
+  .user-list__item--active {
+    position: relative;
+
+    &::after {
+      @include before-after;
+
+      right: 5px;
+      bottom: -3px;
+      left: -7px;
+
+      height: 3px;
+
+      background: $link-main-nav;
+    }
+  }
+
   .user-list__login {
     width: 60px;
     height: 70px;

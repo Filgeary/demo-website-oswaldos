@@ -16,6 +16,10 @@
   .page-login__header {
     height: 300px !important;
   }
+
+  .page-login__modal {
+    margin: 0 auto;
+  }
 }
 
 @media(min-width: $desktop-width) {

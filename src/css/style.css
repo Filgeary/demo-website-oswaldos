@@ -656,6 +656,16 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .user-list {
     width: 60px; }
+  .user-list__item--active {
+    position: relative; }
+    .user-list__item--active::after {
+      position: absolute;
+      content: "";
+      right: 5px;
+      bottom: -3px;
+      left: -7px;
+      height: 3px;
+      background: #826550; }
   .user-list__login {
     width: 60px;
     height: 70px;
@@ -2441,7 +2451,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .page-login__header {
-    height: 300px !important; } }
+    height: 300px !important; }
+  .page-login__modal {
+    margin: 0 auto; } }
 
 @media (min-width: 1200px) {
   .page-login__header {
