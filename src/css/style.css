@@ -2456,7 +2456,14 @@ input[type="radio"].visually-hidden {
   .page-login__header {
     height: 300px !important; }
   .page-login__modal {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .page-login__user-list-item .user-list__login:hover .user-list__login-icon,
+  .page-login__user-list-item .user-list__login:focus .user-list__login-icon {
+    opacity: 0.3;
+    fill: #f7f4f1; }
+  .page-login__user-list-item .user-list__login:active .user-list__login-icon {
+    opacity: 0.3;
+    fill: #f7f4f1; } }
 
 @media (min-width: 1200px) {
   .page-login__header {
@@ -2466,10 +2473,4 @@ input[type="radio"].visually-hidden {
     background-color: #0f0f0f; }
   .page-login__user-list-item .user-list__login:active {
     color: #f7f4f1;
-    background-color: #0f0f0f; }
-  .page-login__user-list-item .user-list__login:hover .user-list__login-icon,
-  .page-login__user-list-item .user-list__login:focus .user-list__login-icon {
-    opacity: 0.3;
-    fill: #f7f4f1; }
-  .page-login__user-list-item .user-list__login:active .user-list__login-icon {
-    opacity: 0.3; } }
+    background-color: #0f0f0f; } }

@@ -20,6 +20,22 @@
   .page-login__modal {
     margin: 0 auto;
   }
+
+  .page-login__user-list-item .user-list__login {
+
+    &:hover .user-list__login-icon,
+    &:focus .user-list__login-icon {
+      opacity: 0.3;
+
+      fill: $font-light;
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.3;
+
+      fill: $font-light;
+    }
+  }
 }
 
 @media(min-width: $desktop-width) {
@@ -40,17 +56,6 @@
       color: $font-light;
 
       background-color: $bg-page-header;
-    }
-
-    &:hover .user-list__login-icon,
-    &:focus .user-list__login-icon {
-      opacity: 0.3;
-
-      fill: $font-light;
-    }
-
-    &:active .user-list__login-icon {
-      opacity: 0.3;
     }
   }
 }
