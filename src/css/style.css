@@ -2371,7 +2371,8 @@ input[type="radio"].visually-hidden {
   top: 0;
   height: 100%;
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  border: none; }
 
 @media (min-width: 768px) {
   .page-contacts__header {
