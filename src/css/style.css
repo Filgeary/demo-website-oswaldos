@@ -823,11 +823,15 @@ input[type="radio"].visually-hidden {
     text-align: center; }
   .stats__legend--bottom {
     display: none; }
+  .stats__list {
+    display: block; }
   .stats__list tbody {
     display: -webkit-box;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 100%; }
   .stats__list tr {
+    display: block;
     width: 50%;
     padding: 25px 35px;
     padding-bottom: 28px; }
