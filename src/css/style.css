@@ -1622,6 +1622,8 @@ input[type="radio"].visually-hidden {
     font-size: 40px;
     line-height: 30px;
     text-align: left; }
+  .pricing__list {
+    display: block; }
   .pricing__list tr {
     border: 1px solid #4d4d4d; }
     .pricing__list tr:not(:last-child) {
@@ -1649,12 +1651,13 @@ input[type="radio"].visually-hidden {
   .pricing__discount-text br {
     display: none; }
   .pricing__value {
+    float: right;
     width: 25%; }
   .pricing__discount-icon {
     width: 40%; }
     .pricing__discount-icon--clock {
       width: 75px;
-      height: auto; }
+      height: 74px; }
   .pricing__discount-text {
     width: 60%;
     margin: 25px 0;

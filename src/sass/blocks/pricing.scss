@@ -123,6 +123,10 @@
     text-align: left;
   }
 
+  .pricing__list {
+    display: block;
+  }
+
   .pricing__list tr {
     border: 1px solid hsl(0, 0%, 30%);
 
@@ -164,6 +168,7 @@
   }
 
   .pricing__value {
+    float: right;
     width: 25%;
   }
 
@@ -172,7 +177,7 @@
 
     &--clock {
       width: 75px;
-      height: auto;
+      height: 74px;
     }
   }
 
