@@ -1325,8 +1325,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
   overflow: hidden; }
   .works__image-wrapper--main::before {
     position: absolute;
