@@ -2379,6 +2379,16 @@ input[type="radio"].visually-hidden {
   position: absolute;
   border: none; }
 
+.page-contacts__wrapper-callback-map {
+  width: 100%;
+  height: auto; }
+
+.page-contacts__callback-map-image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 @media (min-width: 768px) {
   .page-contacts__header {
     height: 300px !important; }
