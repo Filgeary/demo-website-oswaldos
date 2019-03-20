@@ -12,7 +12,11 @@
 }
 
 .contacts__phone {
-  margin-top: 20px;
+  display: block;
+  margin-top: 15px;
+
+  font-size: 30px;
+  line-height: 45px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -25,6 +29,13 @@
   .contacts__title,
   .contacts__text {
     text-align: left;
+  }
+
+  .contacts__phone {
+    margin-top: 10px;
+    
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 // mockup

@@ -2038,7 +2038,10 @@ input[type="radio"].visually-hidden {
   text-align: center; }
 
 .contacts__phone {
-  margin-top: 20px; }
+  display: block;
+  margin-top: 15px;
+  font-size: 30px;
+  line-height: 45px; }
 
 @media (max-width: 767px) {
   .contacts__phone-mobile {
@@ -2047,7 +2050,11 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .contacts__title,
   .contacts__text {
-    text-align: left; } }
+    text-align: left; }
+  .contacts__phone {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 30px; } }
 
 .social__title {
   display: none; }
