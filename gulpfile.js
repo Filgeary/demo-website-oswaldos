@@ -190,6 +190,10 @@ gulp.task('prodServer', function () {
     .on('change', browserSync.reload);
   gulp.watch("src/js/*.js", ['script'])
     .on('change', browserSync.reload);
+  gulp.watch("src/img/**/*", ['images', 'webp'])
+    .on('change', browserSync.reload);
+  gulp.watch("src/img/svg-sprite/*.svg", ['prodSprite'])
+    .on('change', browserSync.reload);
 });
 
 // Deploy to Github Pages
