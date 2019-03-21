@@ -26,14 +26,11 @@ var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 
 // Dev Style
-// Compile SASS into CSS, add Autoprefixer & auto-inject into browsers
+// Compile SASS into CSS & auto-inject into browsers
 gulp.task('devStyle', function () {
   return gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
     .pipe(plumber.stop())
     .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream());
