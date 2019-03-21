@@ -46,7 +46,6 @@ gulp.task('prodStyle', function () {
       autoprefixer()
     ]))
     .pipe(plumber.stop())
-    .pipe(gulp.dest("src/css"))
     .pipe(minify())
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
