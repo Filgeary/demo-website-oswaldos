@@ -99,21 +99,7 @@ gulp.task('images', function () {
 });
 
 // Convert images to WebP
-gulp.task('devWebp', function () {
-  return gulp.src("src/img/**/*.{png,jpg}")
-    .pipe(imagemin([
-      webp({
-        quality: 75
-      })
-    ]))
-    .pipe(rename({
-      extname: ".webp"
-    }))
-    .pipe(gulp.dest("src/img"));
-});
-
-// Convert images to WebP
-gulp.task('prodWebp', function () {
+gulp.task('webp', function () {
   return gulp.src("src/img/**/*.{png,jpg}")
     .pipe(imagemin([
       webp({
@@ -124,11 +110,6 @@ gulp.task('prodWebp', function () {
       extname: ".webp"
     }))
     .pipe(gulp.dest("build/img"));
-});
-
-// Delete Dev Webp files from Src
-gulp.task('delDevWebp', function () {
-  return del("src/img/**/*.webp");
 });
 
 // TODO:
@@ -188,9 +169,7 @@ gulp.task('devServer', function () {
     .on('change', browserSync.reload);
   gulp.watch("src/js/*.js")
     .on('change', browserSync.reload);
-  gulp.watch("src/img/**/*.{png,jpg}", ['devWebp'])
-    .on('change', browserSync.reload);
-  gulp.watch("src/img/*.svg")
+  gulp.watch("src/img/**/*")
     .on('change', browserSync.reload);
   gulp.watch("src/img/svg-sprite/*.svg", ['devSprite'])
     .on('change', browserSync.reload);
@@ -232,9 +211,7 @@ gulp.task('deployGithub', function () {
 gulp.task('dev', function (done) {
   runSequence(
     "clean",
-    "delDevWebp",
     "devStyle",
-    "devWebp",
     "devSprite",
     done
   );
@@ -248,7 +225,7 @@ gulp.task('build', function (done) {
     "prodStyle",
     "script",
     "images",
-    "prodWebp",
+    "webp",
     "prodSprite",
     "copy",
     done
