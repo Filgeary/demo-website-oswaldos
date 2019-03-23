@@ -5,6 +5,9 @@
 // - setup Minify HTML settings
 // - setup SVG settings
 
+// FIXME:
+// - plugin 'gulp-changed' dont working for task 'webp'
+
 // Load plugins
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
@@ -17,6 +20,7 @@ var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
 var rename = require('gulp-rename');
 var del = require('del');
+var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 var webp = require('imagemin-webp');
 var svgstore = require('gulp-svgstore');
@@ -74,6 +78,7 @@ gulp.task('script', function () {
 // Optimize Images
 gulp.task('images', function () {
   return gulp.src("src/img/**/*.{png,jpg,svg}")
+    .pipe(changed("build/img"))
     .pipe(imagemin([
       imagemin.optipng({
         optimizationLevel: 3
@@ -94,8 +99,9 @@ gulp.task('images', function () {
 });
 
 // Convert images to WebP
-gulp.task('webp', function () {
+gulp.task('webp', ['images'], function () {
   return gulp.src("src/img/**/*.{png,jpg}")
+    .pipe(changed("build/img/**/*.webp")) /* FIXME: dont working */
     .pipe(imagemin([
       webp({
         quality: 75
