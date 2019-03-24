@@ -1681,12 +1681,11 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .fieldset-person__wrapper--name-last-name {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0; }
   .fieldset-person__wrapper--tel-email {
     margin-bottom: 30px; }
-  .fieldset-person__wrapper--name-last-name {
-    display: flex;
-    justify-content: space-between; }
   .fieldset-person__item {
     margin-bottom: 30px; }
     .fieldset-person__item--name, .fieldset-person__item--last-name {
@@ -1699,10 +1698,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1200px) {
   .fieldset-person__wrapper--tel-email {
-    margin-bottom: 0; }
-  .fieldset-person__wrapper--tel-email {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 0; }
   .fieldset-person__item {
     margin-bottom: 30px; }
     .fieldset-person__item--name, .fieldset-person__item--last-name, .fieldset-person__item--tel, .fieldset-person__item--email {
