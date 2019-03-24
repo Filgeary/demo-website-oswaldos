@@ -56,7 +56,7 @@
   object-fit: cover;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .page-contacts__header {
     height: 300px !important;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-contacts__header {
     height: 400px !important;
   }
