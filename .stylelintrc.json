@@ -3,9 +3,17 @@
   "extends": "stylelint-config-standard",
 
   "rules": {
-    "at-rule-empty-line-before": ["always", {
-      "except": ["after-same-name"],
-      "ignore": ["blockless-after-blockless"]
+    "declaration-empty-line-before": null,
+
+    "rule-empty-line-before": null,
+
+    "at-rule-empty-line-before": null,
+
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "mixin",
+        "include"
+      ]
     }]
   }
 }
