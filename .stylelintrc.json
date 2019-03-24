@@ -3,8 +3,9 @@
   "extends": "stylelint-config-standard",
 
   "rules": {
-    "at-rule-empty-line-before": [ "always", {
+    "at-rule-empty-line-before": ["always", {
       "except": ["after-same-name"],
-      "ignore": ["blockless-after-blockless"]}],
+      "ignore": ["blockless-after-blockless"]
+    }]
   }
 }
