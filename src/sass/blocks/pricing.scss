@@ -30,15 +30,7 @@
   border-collapse: collapse;
 }
 
-.pricing__list tbody {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .pricing__list tr {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
 
   &:last-child {
@@ -127,7 +119,16 @@
     display: block;
   }
 
+  .pricing__list tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .pricing__list tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     border: 1px solid hsl(0, 0%, 30%);
 
     &:not(:last-child) {
