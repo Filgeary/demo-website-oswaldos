@@ -3,7 +3,6 @@
 }
 
 .fieldset-person__wrapper {
-
   &--name-last-name,
   &--tel-email {
     margin-bottom: 30px;
@@ -36,9 +35,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .fieldset-person__wrapper {
-
     &--name-last-name {
       display: flex;
       justify-content: space-between;
@@ -70,9 +67,7 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .fieldset-person__wrapper {
-
     &--tel-email {
       display: flex;
       justify-content: space-between;

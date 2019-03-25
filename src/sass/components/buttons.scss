@@ -40,9 +40,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .btn__primary {
-
     &--appointment {
       display: block;
       width: 65%;
@@ -55,9 +53,7 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .btn__primary {
-
     &--appointment {
       width: 40%;
     }
@@ -85,7 +81,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-
   .reviews__write,
   .reviews__prev,
   .reviews__next,
@@ -96,7 +91,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .news__to-all,
   .reviews__write,
   .works__to-home,
@@ -105,7 +99,6 @@
   }
 
   .contacts__phone {
-
     &:hover,
     &:focus,
     &:active {

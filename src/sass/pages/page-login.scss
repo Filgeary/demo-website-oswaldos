@@ -22,7 +22,6 @@
   }
 
   .page-login__user-list-item .user-list__login {
-
     &:hover .user-list__login-icon,
     &:focus .user-list__login-icon {
       opacity: 0.3;
@@ -44,7 +43,6 @@
   }
 
   .page-login__user-list-item .user-list__login {
-
     &:hover,
     &:focus {
       color: $font-light;

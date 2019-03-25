@@ -5,9 +5,12 @@
   "rules": {
     "declaration-empty-line-before": null,
 
-    "rule-empty-line-before": null,
-
-    "at-rule-empty-line-before": null,
+    "at-rule-empty-line-before": ["always", {
+      "ignore": [
+        "first-nested",
+        "blockless-after-same-name-blockless"
+      ]
+    }],
 
     "at-rule-no-unknown": [true, {
       "ignoreAtRules": [

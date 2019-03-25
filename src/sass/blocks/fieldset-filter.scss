@@ -36,7 +36,6 @@
 }
 
 .fieldset-filter__list-item {
-
   &--radio {
     width: 30%;
     margin-right: 5%;
@@ -161,7 +160,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .fieldset-filter {
     border-top: 1px solid darken($bg-lightgrey, 15%);
 
@@ -180,7 +178,6 @@
   }
 
   .fieldset-filter__list {
-
     &--radio {
       justify-content: flex-start;
     }
@@ -192,7 +189,6 @@
   }
 
   .fieldset-filter__list-item {
-
     &--radio {
       flex-grow: 1;
       width: 15%;
@@ -222,7 +218,6 @@
   }
 
   .fieldset-filter__label {
-
     &--radio {
       padding-bottom: 120px;
     }
@@ -250,16 +245,13 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .fieldset-filter {
-
     &--checkbox {
       margin-bottom: 40px;
     }
   }
 
   .fieldset-filter__list-item {
-
     &--checkbox {
       width: 33.3%;
       flex-grow: 0;
