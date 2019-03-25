@@ -126,6 +126,20 @@
     background-color: $bg-lightgrey;
   }
 
+  .reviews__prev {
+    order: -1;
+
+    border-right: none !important;
+    background: url(../img/icon-left-arrow.svg) no-repeat center;
+    background-size: 15px 15px;
+  }
+
+  .reviews__next {
+    border-left: none !important;
+    background: url(../img/icon-right-arrow.svg) no-repeat center;
+    background-size: 15px 15px;
+  }
+
   .reviews__prev,
   .reviews__next {
     width: 50px;
@@ -140,20 +154,6 @@
     &:active {
       background-color: lighten($bg-darkgrey, 70%);
     }
-  }
-
-  .reviews__prev {
-    order: -1;
-
-    border-right: none;
-    background: url(../img/icon-left-arrow.svg) no-repeat center;
-    background-size: 15px 15px;
-  }
-
-  .reviews__next {
-    border-left: none;
-    background: url(../img/icon-right-arrow.svg) no-repeat center;
-    background-size: 15px 15px;
   }
 }
 
@@ -185,7 +185,7 @@
 
   .reviews__prev,
   .reviews__next {
-    border: 1px solid $border-decor;
+    border: 1px solid $border-decor !important;
   }
 
   .reviews__toggles {
