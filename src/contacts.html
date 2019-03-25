@@ -20,13 +20,17 @@
   <!-- Picturefill -->
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
 
   <!-- 'SVG for Everybody' for support 'svg sprite' and tag 'use' -->
   <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script>
+    svg4everybody(); // run it now or whenever you are ready
+
+  </script>
 
   <meta name="description" content="Oswaldos - The Creative Agency">
   <meta name="keywords" content="oswaldos, creative, agency, contacts">
@@ -86,42 +90,47 @@
 
   <main class="page-main page-contacts__main">
 
-    <h1 class="visually-hidden">Contacts</h1>
+    <section class="page-contacts">
 
-    <div class="page-contacts__wrapper">
-      <section class="page-contacts__contacts-block">
-        <h2 class="page-contacts__title">Our Contacts</h2>
+      <h1 class="visually-hidden">Contacts</h1>
 
-        <p class="page-contacts__text">
-          <b>Oswaldos - Creative Agency</b> <br>
-          Los Angeles, Santa Monica Blvd 25 <br>
-          Tel:
-          <a class="page-contacts__phone" href="tel:+19995557755">
-            +1 (999) 555-77-55
-          </a> <br>
-          Email:
-          <a href="mailto:oswaldos@domain.com">oswaldos@domain.com</a>
-        </p>
-      </section>
+      <div class="page-contacts__wrapper">
+        <section class="page-contacts__contacts-block">
+          <h2 class="page-contacts__title">Our Contacts</h2>
 
-      <section class="page-contacts__map">
-        <h2 class="visually-hidden">Map</h2>
-        <div class="page-contacts__wrapper-iframe">
-          <iframe class="page-contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1652.0819255539602!2d-118.35706610891984!3d34.09094273252978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bedaa626d3bb%3A0x32cd051d13b10363!2sBen&#39;s+Income+Tax+and+Accounting!5e0!3m2!1sru!2sru!4v1550931749600"
-            width="600" height="450" style="border:0" allowfullscreen></iframe>
+          <p class="page-contacts__text">
+            <b>Oswaldos - Creative Agency</b> <br>
+            Los Angeles, Santa Monica Blvd 25 <br>
+            Tel:
+            <a class="page-contacts__phone" href="tel:+19995557755">
+              +1 (999) 555-77-55
+            </a> <br>
+            Email:
+            <a href="mailto:oswaldos@domain.com">oswaldos@domain.com</a>
+          </p>
+        </section>
 
-          <div class="page-contacts__wrapper-callback-map">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/oswaldos-map-tablet.webp">
-              <source type="image/webp" srcset="img/oswaldos-map-mobile.webp">
+        <section class="page-contacts__map">
+          <h2 class="visually-hidden">Map</h2>
+          <div class="page-contacts__wrapper-iframe">
+            <iframe class="page-contacts__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1652.0819255539602!2d-118.35706610891984!3d34.09094273252978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bedaa626d3bb%3A0x32cd051d13b10363!2sBen&#39;s+Income+Tax+and+Accounting!5e0!3m2!1sru!2sru!4v1550931749600"
+              width="600" height="450" style="border:0" allowfullscreen></iframe>
 
-              <source media="(min-width: 768px)" srcset="img/oswaldos-map-tablet.jpg">
-              <img class="page-contacts__callback-map-image" src="img/oswaldos-map-mobile.jpg" alt="Oswaldos Map">
-            </picture>
+            <div class="page-contacts__wrapper-callback-map">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/oswaldos-map-tablet.webp">
+                <source type="image/webp" srcset="img/oswaldos-map-mobile.webp">
+
+                <source media="(min-width: 768px)" srcset="img/oswaldos-map-tablet.jpg">
+                <img class="page-contacts__callback-map-image" src="img/oswaldos-map-mobile.jpg" alt="Oswaldos Map">
+              </picture>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+
+    </section>
 
   </main>
 
@@ -181,7 +190,8 @@
         <h2 class="visually-hidden">Copyright</h2>
 
         <span class="copyright__text">Developed by</span>
-        <a class="btn copyright__link" href="http://github.com/Filgeary" target="_blank" rel="noopener noreferrer">Filgeary</a>
+        <a class="btn copyright__link" href="http://github.com/Filgeary" target="_blank"
+          rel="noopener noreferrer">Filgeary</a>
 
       </section>
 
@@ -209,7 +219,8 @@
 
         <p class="modal__form-item modal__form-item--login-help">
           <label class="modal__label modal__label--checkbox" for="remember">
-            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember" id="remember">
+            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember"
+              id="remember">
             <span class="modal__checkbox-indicator"></span>
             Remember Me
           </label>
