@@ -5,6 +5,9 @@
   "rules": {
     "declaration-empty-line-before": null,
 
+    "block-no-empty": true,
+    "comment-no-empty": true,
+
     "at-rule-empty-line-before": ["always", {
       "ignore": [
         "first-nested",
