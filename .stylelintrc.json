@@ -2,7 +2,16 @@
   "defaultSeverity": "warning",
   "extends": "stylelint-config-standard",
 
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+
   "rules": {
+    "plugin/no-unsupported-browser-features": [true, {
+      "severity": "warning",
+      "ignore": ["flexbox", "css-featurequeries", "css-boxshadow", "transforms2d", "border-radius", "css-fixed", "background-img-opts", "user-select-none", "outline"]
+    }],
+
     "declaration-empty-line-before": null,
 
     "block-no-empty": true,
