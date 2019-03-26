@@ -18,6 +18,7 @@
   &:focus,
   &:active {
     color: $btn-hover-color;
+
     background-color: $btn-bg-hover-color;
   }
 
@@ -30,6 +31,7 @@
 
 .btn__primary {
   color: $btn-primary-color;
+
   background: $btn-primary-bg;
 
   &:hover,

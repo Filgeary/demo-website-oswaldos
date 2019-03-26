@@ -1,7 +1,3 @@
-.fieldset-person {
-  // style
-}
-
 .fieldset-person__wrapper {
   &--name-last-name,
   &--tel-email {
@@ -18,10 +14,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.fieldset-person__label {
-  // style
 }
 
 .fieldset-person__input,
