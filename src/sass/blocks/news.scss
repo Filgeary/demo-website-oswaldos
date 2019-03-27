@@ -12,8 +12,12 @@
 .news__wrapper {
   width: 87.5%;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 25px;
   padding-bottom: 50px;
+
+  @supports (clip-path: polygon(50% 35px, 100% 0, 100% 100%, 0 100%, 0 0)) {
+    padding-top: 65px;
+  }
 }
 
 .news__title {
@@ -109,8 +113,12 @@
     justify-content: space-between;
     align-items: center;
     width: 83.3%;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 20px;
+
+    @supports (clip-path: polygon(50% 40px, 100% 0, 100% 100%, 0 100%, 0 0)) {
+      padding-top: 65px;
+    }
   }
 
   .news__list {
@@ -150,8 +158,12 @@
   .news__wrapper {
     width: 80%;
     max-width: 1200px;
-    padding-top: 110px;
+    padding-top: 65px;
     padding-bottom: 45px;
+
+    @supports (clip-path: polygon(50% 40px, 100% 0, 100% 100%, 0 100%, 0 0)) {
+      padding-top: 110px;
+    }
   }
 
   .news__item {
