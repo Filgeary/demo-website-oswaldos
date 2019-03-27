@@ -5,8 +5,8 @@
   "description": "training project",
   "main": "src/index.html",
   "scripts": {
-    "stylelint": "stylelint ./src/**/*.scss --color -f verbose",
-    "stylelint-fix": "stylelint ./src/**/*.scss --color -f verbose --fix",
+    "stylelint": "stylelint ./src/sass/**/*.scss --color -f verbose",
+    "stylelint-fix": "stylelint ./src/sass/**/*.scss --color -f verbose --fix",
     "test": "npm run stylelint",
     "dev": "gulp dev && gulp devServer",
     "build": "gulp build && gulp prodServer",
