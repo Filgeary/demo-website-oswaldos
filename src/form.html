@@ -14,19 +14,32 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ee7624">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Modernizr for support WebP -->
   <script src="js/modernizr-custom.min.js"></script>
 
   <!-- Picturefill -->
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
 
   <!-- 'SVG for Everybody' for support 'svg sprite' and tag 'use' -->
   <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody(); // run it after 'svg4everybody' script</script>
+  <script>
+    svg4everybody(); // run it after 'svg4everybody' script
+
+  </script>
 
   <meta name="description" content="Oswaldos - Enroll">
   <meta name="keywords" content="oswaldos, creative, agency, enroll">
@@ -102,12 +115,13 @@
             <div class="fieldset-person__wrapper--name-last-name">
               <p class="fieldset-person__item fieldset-person__item--name">
                 <label class="fieldset-person__label" for="form-name" aria-label="Name"></label>
-                <input class="fieldset-person__input fieldset-person__input--name" type="text" name="name" id="form-name"
-                  placeholder="Name">
+                <input class="fieldset-person__input fieldset-person__input--name" type="text" name="name"
+                  id="form-name" placeholder="Name">
               </p>
               <p class="fieldset-person__item fieldset-person__item--last-name">
                 <label class="fieldset-person__label" for="form-last-name" aria-label="Last Name"></label>
-                <input class="fieldset-person__input" type="text" name="last-name" id="form-last-name" placeholder="Last Name">
+                <input class="fieldset-person__input" type="text" name="last-name" id="form-last-name"
+                  placeholder="Last Name">
               </p>
             </div>
 
@@ -134,32 +148,32 @@
             <legend class="fieldset-filter__title">Choose Service</legend>
             <ul class="fieldset-filter__list fieldset-filter__list--radio">
               <li class="fieldset-filter__list-item fieldset-filter__list-item--radio">
-                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio" name="service"
-                  id="form-service-1" value="service-1" checked>
+                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio"
+                  name="service" id="form-service-1" value="service-1" checked>
                 <label class="fieldset-filter__label fieldset-filter__label--radio fieldset-filter__label--service1"
                   for="form-service-1">Service#1</label>
               </li>
               <li class="fieldset-filter__list-item fieldset-filter__list-item--radio">
-                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio" name="service"
-                  id="form-service-2" value="service-2">
+                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio"
+                  name="service" id="form-service-2" value="service-2">
                 <label class="fieldset-filter__label fieldset-filter__label--radio fieldset-filter__label--service2"
                   for="form-service-2">Service#2</label>
               </li>
               <li class="fieldset-filter__list-item fieldset-filter__list-item--radio">
-                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio" name="service"
-                  id="form-service-3" value="service-3">
+                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio"
+                  name="service" id="form-service-3" value="service-3">
                 <label class="fieldset-filter__label fieldset-filter__label--radio fieldset-filter__label--service3"
                   for="form-service-3">Service#3</label>
               </li>
               <li class="fieldset-filter__list-item fieldset-filter__list-item--radio">
-                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio" name="service"
-                  id="form-service-4" value="service-4">
+                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio"
+                  name="service" id="form-service-4" value="service-4">
                 <label class="fieldset-filter__label fieldset-filter__label--radio fieldset-filter__label--service4"
                   for="form-service-4">Service#4</label>
               </li>
               <li class="fieldset-filter__list-item fieldset-filter__list-item--radio">
-                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio" name="service"
-                  id="form-service-5" value="service-5">
+                <input class="visually-hidden fieldset-filter__input fieldset-filter__input--radio" type="radio"
+                  name="service" id="form-service-5" value="service-5">
                 <label class="fieldset-filter__label fieldset-filter__label--radio fieldset-filter__label--service5"
                   for="form-service-5">Service#5</label>
               </li>
@@ -280,7 +294,8 @@
         <h2 class="visually-hidden">Copyright</h2>
 
         <span class="copyright__text">Developed by</span>
-        <a class="btn copyright__link" href="http://github.com/Filgeary" target="_blank" rel="noopener noreferrer">Filgeary</a>
+        <a class="btn copyright__link" href="http://github.com/Filgeary" target="_blank"
+          rel="noopener noreferrer">Filgeary</a>
 
       </section>
 
@@ -308,7 +323,8 @@
 
         <p class="modal__form-item modal__form-item--login-help">
           <label class="modal__label modal__label--checkbox" for="remember">
-            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember" id="remember">
+            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember"
+              id="remember">
             <span class="modal__checkbox-indicator"></span>
             Remember Me
           </label>

@@ -14,19 +14,32 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ee7624">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Modernizr for support WebP -->
   <script src="js/modernizr-custom.min.js"></script>
 
   <!-- Picturefill -->
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
 
   <!-- 'SVG for Everybody' for support 'svg sprite' and tag 'use' -->
   <script src="js/svg4everybody.min.js"></script>
-  <script>svg4everybody(); // run it after 'svg4everybody' script</script>
+  <script>
+    svg4everybody(); // run it after 'svg4everybody' script
+
+  </script>
 
   <meta name="description" content="Oswaldos - The Creative Agency">
   <meta name="keywords" content="oswaldos, creative, agency">
@@ -261,10 +274,12 @@
                 <source type="image/webp" srcset="img/reviews-photo-1-mobile@1x.webp 1x,
                   img/reviews-photo-1-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/reviews-photo-1-desktop@1x.jpg 1x, img/reviews-photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/reviews-photo-1-tablet@1x.jpg 1x, img/reviews-photo-1-tablet@2x.jpg 2x">
-                <img class="reviews__author-image" src="img/reviews-photo-1-mobile@1x.jpg" srcset="img/reviews-photo-1-mobile@2x.jpg 2x"
-                  alt="Travis Photo">
+                <source media="(min-width: 1200px)"
+                  srcset="img/reviews-photo-1-desktop@1x.jpg 1x, img/reviews-photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews-photo-1-tablet@1x.jpg 1x, img/reviews-photo-1-tablet@2x.jpg 2x">
+                <img class="reviews__author-image" src="img/reviews-photo-1-mobile@1x.jpg"
+                  srcset="img/reviews-photo-1-mobile@2x.jpg 2x" alt="Travis Photo">
               </picture>
             </p>
 
@@ -285,10 +300,12 @@
                 <source type="image/webp" srcset="img/reviews-photo-2-mobile@1x.webp 1x,
                   img/reviews-photo-2-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/reviews-photo-2-desktop@1x.jpg 1x, img/reviews-photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/reviews-photo-2-tablet@1x.jpg 1x, img/reviews-photo-2-tablet@2x.jpg 2x">
-                <img class="reviews__author-image" src="img/reviews-photo-2-mobile@1x.jpg" srcset="img/reviews-photo-2-mobile@2x.jpg 2x"
-                  alt="Tomas Photo">
+                <source media="(min-width: 1200px)"
+                  srcset="img/reviews-photo-2-desktop@1x.jpg 1x, img/reviews-photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews-photo-2-tablet@1x.jpg 1x, img/reviews-photo-2-tablet@2x.jpg 2x">
+                <img class="reviews__author-image" src="img/reviews-photo-2-mobile@1x.jpg"
+                  srcset="img/reviews-photo-2-mobile@2x.jpg 2x" alt="Tomas Photo">
               </picture>
             </p>
 
@@ -309,10 +326,12 @@
                 <source type="image/webp" srcset="img/reviews-photo-3-mobile@1x.webp 1x,
                   img/reviews-photo-3-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/reviews-photo-3-desktop@1x.jpg 1x, img/reviews-photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/reviews-photo-3-tablet@1x.jpg 1x, img/reviews-photo-3-tablet@2x.jpg 2x">
-                <img class="reviews__author-image" src="img/reviews-photo-3-mobile@1x.jpg" srcset="img/reviews-photo-3-mobile@2x.jpg 2x"
-                  alt="David Photo">
+                <source media="(min-width: 1200px)"
+                  srcset="img/reviews-photo-3-desktop@1x.jpg 1x, img/reviews-photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/reviews-photo-3-tablet@1x.jpg 1x, img/reviews-photo-3-tablet@2x.jpg 2x">
+                <img class="reviews__author-image" src="img/reviews-photo-3-mobile@1x.jpg"
+                  srcset="img/reviews-photo-3-mobile@2x.jpg 2x" alt="David Photo">
               </picture>
             </p>
 
@@ -396,7 +415,8 @@
         <h2 class="visually-hidden">Copyright</h2>
 
         <span class="copyright__text">Developed by</span>
-        <a class="btn copyright__link" href="http://github.com/Filgeary" target="_blank" rel="noopener noreferrer">Filgeary</a>
+        <a class="btn copyright__link" href="http://github.com/Filgeary" target="_blank"
+          rel="noopener noreferrer">Filgeary</a>
 
       </section>
 
@@ -424,7 +444,8 @@
 
         <p class="modal__form-item modal__form-item--login-help">
           <label class="modal__label modal__label--checkbox" for="remember">
-            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember" id="remember">
+            <input class="visually-hidden modal__input modal__input--checkbox" type="checkbox" name="remember"
+              id="remember">
             <span class="modal__checkbox-indicator"></span>
             Remember Me
           </label>
