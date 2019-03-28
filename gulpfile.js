@@ -139,6 +139,9 @@ gulp.task('prodSprite', function () {
     .pipe(gulp.dest("build/img"));
 });
 
+// TODO:
+// - Merge tasks 'copy' and 'copyFavicons'
+
 // Copy files
 gulp.task('copy', function () {
   return gulp.src([
