@@ -149,6 +149,14 @@ gulp.task('copy', function () {
     .pipe(gulp.dest("build"));
 });
 
+// Copy Favicons files
+gulp.task('copyFavicons', function () {
+  return gulp.src([
+      "src/favicons/*"
+    ])
+    .pipe(gulp.dest("build"));
+});
+
 // Delete files
 gulp.task('clean', function () {
   return del("build");
@@ -230,6 +238,7 @@ gulp.task('build', function (done) {
     "webp",
     "prodSprite",
     "copy",
+    "copyFavicons",
     done
   );
 });
