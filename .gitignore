@@ -1,3 +1,6 @@
+# Gulp plugin 'gulp-gh-pages' (cache folder)
+.publish/
+
 # Build
 build/
 
