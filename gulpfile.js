@@ -2,7 +2,6 @@
 // =====================================================================
 
 // TODO:
-// - setup Minify HTML settings
 // - setup SVG settings
 
 // FIXME:
@@ -55,9 +54,6 @@ gulp.task('prodStyle', function () {
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
 });
-
-// TODO:
-// Setup Minify HTML settings
 
 // Minify HTML
 gulp.task('html', function () {
