@@ -70,20 +70,12 @@
 .works__image {
   display: block;
   width: 100%;
-  height: auto;
-
-  @supports (object-fit: cover) {
-    height: 200px;
-    object-fit: cover;
-    object-position: 50% 20%;
-  }
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 20%;
 
   &--main {
-    height: auto;
-
-    @supports (object-fit: cover) {
-      height: 480px;
-    }
+    height: 480px;
   }
 }
 
@@ -176,16 +168,11 @@
 
   .works__image {
     height: auto;
-
-    @supports (object-fit: cover) {
-      max-height: 320px;
-      object-position: 50% 10%;
-    }
+    max-height: 320px;
+    object-position: 50% 10%;
 
     &--main {
-      @supports (object-fit: cover) {
-        max-height: 550px;
-      }
+      max-height: 550px;
     }
   }
 
