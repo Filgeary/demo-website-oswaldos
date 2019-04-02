@@ -63,7 +63,16 @@ gulp.task('prodStyle', function () {
 gulp.task('html', function () {
   return gulp.src("src/*.html")
     .pipe(htmlmin({
-      collapseWhitespace: true
+      collapseBooleanAttributes: true,
+      collapseWhitespace: true,
+      decodeEntities: true,
+      html5: true,
+      minifyCSS: true,
+      minifyJS: true,
+      processConditionalComments: true,
+      removeComments: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true
     }))
     .pipe(gulp.dest("build"));
 });
