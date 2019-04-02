@@ -28,6 +28,10 @@
     document.documentElement.classList.remove("no-js");
   </script>
 
+  <!-- Polyfill object-fit/object-position
+  Load before Picturefill -->
+  <script src="js/ofi.min.js"></script>
+
   <!-- Modernizr for support WebP -->
   <script src="js/modernizr-custom.min.js"></script>
 
@@ -464,6 +468,11 @@
 
 
   <script src="js/main.js"></script>
+
+  <!-- Polyfill object-fit/object-position -->
+  <script>
+    objectFitImages();
+  </script>
 
 
 </body>
