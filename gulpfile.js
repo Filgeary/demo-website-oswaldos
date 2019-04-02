@@ -14,6 +14,7 @@ var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var postcssObjectFit = require('postcss-object-fit-images');
 var minify = require('gulp-csso');
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
@@ -46,7 +47,8 @@ gulp.task('prodStyle', function () {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      postcssObjectFit()
     ]))
     .pipe(plumber.stop())
     .pipe(minify())
