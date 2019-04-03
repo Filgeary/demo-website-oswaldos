@@ -16,6 +16,7 @@ var autoprefixer = require('autoprefixer');
 var postcssObjectFit = require('postcss-object-fit-images');
 var minify = require('gulp-csso');
 var htmlmin = require('gulp-htmlmin');
+var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
 var rename = require('gulp-rename');
@@ -71,6 +72,14 @@ gulp.task('html', function () {
       removeStyleLinkTypeAttributes: true
     }))
     .pipe(gulp.dest("build"));
+});
+
+// Concat and Minify Polyfills JS files
+gulp.task('polyfills', function () {
+  return gulp.src('src/js/polyfills/*.js')
+    .pipe(concat('polyfills-bundle.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
 });
 
 // Minify JS
@@ -243,6 +252,7 @@ gulp.task('build', function (done) {
     "clean",
     "html",
     "prodStyle",
+    "polyfills",
     "script",
     "images",
     "webp",
