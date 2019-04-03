@@ -85,7 +85,7 @@ gulp.task('polyfills', function () {
 // Minify JS
 gulp.task('script', function () {
   return pipeline(
-    gulp.src('src/js/*.js'),
+    gulp.src('src/js/*.js', !'src/js/polyfills/*.js'),
     uglify(),
     gulp.dest('build/js')
   );
