@@ -1,6 +1,8 @@
 # demo-website-3-oswaldos
 
-Training project - Responsive, Adaptive website (320, 768, 1200px)
+> Build folder on branch `gh-pages`
+
+## Training project - Responsive, Adaptive website (320, 768, 1200px)
 
 - HTML, CSS, JavaScript, Git, GitHub
 
@@ -25,5 +27,3 @@ Training project - Responsive, Adaptive website (320, 768, 1200px)
 - Supports modern browsers and IE11
 
 - Passed the test in Chrome DevTools Audit
-
-Build folder on branch `gh-pages`
