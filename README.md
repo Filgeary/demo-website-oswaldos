@@ -1,4 +1,4 @@
-# demo-website-3-oswaldos
+# demo-website-oswaldos
 
 > Build folder on branch `gh-pages`
 
@@ -18,7 +18,7 @@
 
 - Concatenation polyfills in one JS-bundle
 
-- Autoprefixer and Stylelint
+- Stylelint and Autoprefixer
 
 - Performance: preload fonts and critical assets
 
