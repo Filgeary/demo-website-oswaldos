@@ -26,4 +26,4 @@
 
 - Supports modern browsers and IE11
 
-- Passed the test in Chrome DevTools Audit
+- Passed the test in Chrome DevTools Audit (green zone)
