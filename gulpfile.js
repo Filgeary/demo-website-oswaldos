@@ -62,7 +62,6 @@ gulp.task('html', function () {
     .pipe(htmlmin({
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
-      decodeEntities: true,
       html5: true,
       minifyCSS: true,
       minifyJS: true,
