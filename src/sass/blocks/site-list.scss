@@ -20,14 +20,14 @@
 .site-list a[href] {
   &:hover,
   &:focus {
-    background-color: #755a46;
-    border-top-color: #755a46;
+    background-color: hsl(26, 25%, 37%);
+    border-top-color: hsl(26, 25%, 36%);
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #6a4d38;
-    border-top-color: #6a4d38;
+    background-color: hsl(25, 31%, 32%);
+    border-top-color: hsl(25, 31%, 31%);
   }
 }
 
