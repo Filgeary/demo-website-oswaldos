@@ -30,4 +30,6 @@
 
 - Supports modern browsers and IE11
 
+- Validation HTML, CSS
+
 - Passed the test in Chrome DevTools Audit (Green zone, No PWA)
