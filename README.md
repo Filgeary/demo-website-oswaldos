@@ -24,7 +24,7 @@
 
 - Stylelint and Autoprefixer
 
-- Performance: preload fonts and critical assets
+- Preload fonts and critical assets
 
 - Favicons
 
