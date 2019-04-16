@@ -16,7 +16,7 @@
 
 - Retina-ready images
 
-- Webp format support
+- Webp image format
 
 - Minification HTML, CSS and JS files
 
